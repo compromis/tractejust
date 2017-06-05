@@ -1,0 +1,13 @@
+@import '../bootstrap/customizations.scss';
+
+body {
+  background-color: #F1F2F3;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Compromis, sans-serif;
+}
+
+@import 'header';
+
+@import 'amendments';

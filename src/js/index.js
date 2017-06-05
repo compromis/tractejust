@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../fonts/fonts.scss';
 import 'bootstrap-loader';
-import '../sass/index.scss';
+import '../sass/app.scss';
 
 import Layout from './layout';
 
