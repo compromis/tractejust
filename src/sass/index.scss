@@ -1,3 +1,89 @@
 body {
-  background: white;
+  background-color: #F1F2F3;
+}
+
+.main-header {
+  background: linear-gradient(270deg, #D4432F, #E28333);
+  background-size: 200% 100%;
+  -webkit-animation: HeaderOrange 15s ease infinite;
+  -z-animation: HeaderOrange 15s ease infinite;
+  -o-animation: HeaderOrange 15s ease infinite;
+  animation: HeaderOrange 15s ease infinite;
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    item: 1;
+    flex-basis: 200px;
+    align-self: stretch;
+    background: #FFF;
+    padding: 10px 20px;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slogan {
+    item: 2;
+    align-self: center;
+    margin-left: 20px;
+
+    a {
+      display: block;
+      font-family: CompromisBold, 'Helvetica', sans-serif;
+      color: #FFF;
+      font-size: 24px;
+
+    }
+  }
+
+  .languages {
+    item: 3;
+    align-self: center;
+    margin-left: auto;
+    text-align: right;
+
+    ul {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+
+
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+.amendments-roulette {
+    background: #333;
+    color: #FFF;
+}
+
+@-webkit-keyframes HeaderOrange {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+@-moz-keyframes HeaderOrange {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+@keyframes HeaderOrange {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
 }

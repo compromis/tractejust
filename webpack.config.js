@@ -11,13 +11,13 @@ var isProd = process.env.NODE_ENV === 'production';
 var cssDev = ['style-loader', 'css-loader?sourceMap', 'sass-loader'];
 var cssProd = ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    loader: ['css-loader', 'sass-loader'],
-    publicPath: '/dist/css'
+    use: ['css-loader', 'sass-loader'],
+    publicPath: '/'
 });
 
 var cssConfig = isProd ? cssProd : cssDev;
 
-var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
+//var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
 
 var htmlPlugin = new HtmlWebpackPlugin({
             title: 'Tracte Just',
@@ -36,8 +36,7 @@ var extractPlugin = new ExtractTextPlugin({
 
 var config = {
   entry: {
-    app: SRC_DIR + '/index.js',
-    bootstrap: bootstrapConfig
+    app: SRC_DIR + '/js/index.js'
   },
   output: {
     path: DIST_DIR,
@@ -59,7 +58,7 @@ var config = {
               test: /\.(woff2?)$/,
               use: 'url-loader?limit=10000&name=fonts/[name].[ext]'
           },
-          {   test: /\.(ttf|eot)$/,
+          {   test: /\.(ttf|eot|svg)$/,
               use: 'file-loader?name=fonts/[name].[ext]'
           },
           {
@@ -67,7 +66,7 @@ var config = {
               use: 'imports-loader?jQuery=jquery'
           },
           {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                test: /\.(jpe?g|png|gif)$/i,
                 use: [
                   'file-loader?name=images/[name].[ext]',
                   'image-webpack-loader?bypassOnDebug'
