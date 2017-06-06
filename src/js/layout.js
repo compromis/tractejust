@@ -2,21 +2,15 @@ import React from 'react';
 
 import Header from './components/header';
 import AmendmentsRoulette from './components/amendments-roulette';
+import CarouselWidget from './components/carousel';
 
 class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      value: null,
-    };
-  }
 
   render() {
     return (
       <div>
         <Header />
-        <AmendmentsRoulette />
+        <CarouselWidget />
 
         <div className="container">
           <div className="row">
