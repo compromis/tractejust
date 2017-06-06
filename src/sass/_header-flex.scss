@@ -1,7 +1,4 @@
-.navbar {
-  margin-bottom: 0;
-  border: 0;
-  border-radius: 0;
+.main-header {
   background: linear-gradient(270deg, #D4432F, #E28333);
   background-size: 200% 100%;
   -webkit-animation: HeaderOrange 15s ease infinite;
@@ -9,55 +6,71 @@
   -o-animation: HeaderOrange 15s ease infinite;
   animation: HeaderOrange 15s ease infinite;
 
-  .navbar-brand {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    item: 1;
+    flex-basis: 200px;
+    align-self: stretch;
     background: #FFF;
-    width: 130px;
-    padding: 12px 10px;
+    padding: 10px 20px;
+    text-align: center;
 
     img {
       width: 100%;
     }
-
-    &:hover {
-      background: #FFF;
-    }
   }
 
-  .navbar-campaign-name {
-    float: left;
-    margin: 12px 10px;
+  .slogan {
+    item: 2;
+    align-self: center;
+    margin-left: 20px;
 
     a {
+      display: block;
       font-family: CompromisBold, 'Helvetica', sans-serif;
       color: #FFF;
-      font-size: 18px;
+      font-size: 24px;
+
+    }
+  }
+
+  .languages {
+    item: 3;
+    align-self: center;
+    margin-left: auto;
+    text-align: right;
+
+    ul {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 0;
+
+      li:last-child {
+        a {
+          padding-right: 0;
+          border-left: 1px rgba(255, 255, 255, 0.5) solid;
+        }
+      }
+
+      li {
+        display: inline-block;
+
+
+        a {
+          color: #FFF;
+          padding: 0 10px;
+        }
+      }
     }
   }
 }
 
-.navbar-default {
-  .navbar-nav > li > a {
-    color: #FFF;
-
-    &:hover {
-      color: #FFF;
-      text-decoration: underline;
-    }
-  }
-
-  .navbar-toggle {
-    border-color: transparent;
-    background-color: transparent;
-
-    &:hover, &:focus {
-      background-color:transparent;
-    }
-
-    .icon-bar {
-      background-color: #FFF;
-    }
-  }
-}
 
 @-webkit-keyframes HeaderOrange {
   0% { background-position: 0% 50% }
@@ -76,18 +89,10 @@
 }
 
 @media (min-width: $screen-md-min) {
-  .navbar {
-    .navbar-brand {
-      width: 200px;
-      padding: 7px 20px;
-    }
-
-    .navbar-campaign-name {
-      margin: 9px 20px;
-
-      a {
-        font-size: 22px;
-      }
+  .main-header {
+    .logo {
+      flex-basis: 200px;
+      padding: 10px 20px;
     }
   }
 }

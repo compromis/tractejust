@@ -195,7 +195,8 @@ const Carousel = createReactClass({
                   wrapAround={self.props.wrapAround}
                   nextSlide={self.nextSlide}
                   previousSlide={self.previousSlide}
-                  goToSlide={self.goToSlide} />
+                  goToSlide={self.goToSlide}
+                  updateCurrentAmendment={self.props.updateCurrentAmendment} />
               </div>
             )
           })
@@ -466,6 +467,7 @@ const Carousel = createReactClass({
 
   goToSlide(index) {
     var self = this;
+
     if ((index >= React.Children.count(this.props.children) || index < 0)) {
       if (!this.props.wrapAround) { return };
       if (index >= React.Children.count(this.props.children)) {

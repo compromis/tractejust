@@ -34,7 +34,7 @@ const DefaultDecorators = [
       render() {
         return (
           <div className="amendments__button">
-            <button className="btn btn-default" onClick={this.handleClick}>Una nova</button>
+            <button className="btn btn-default" onClick={this.handleClick}>Què mes?</button>
           </div>
         )
       },
@@ -52,6 +52,7 @@ const DefaultDecorators = [
         e.preventDefault();
         let random = this.getRandomSlide();
         this.props.goToSlide(random);
+        this.props.updateCurrentAmendment(random);
       },
     }),
     position: 'BottomCenter'

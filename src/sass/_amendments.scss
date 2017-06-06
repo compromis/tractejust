@@ -5,12 +5,17 @@
     &__header {
       position: absolute;
       width: 100%;
-      top: 60px;
+      top: 0;
+      margin-top: 40px;
       text-align: center;
       color: #FFF;
+      font-size: 20px;
       line-height: 150%;
       text-shadow: -3px 3px 0 rgba(0, 0, 0, 0.2);
       z-index: 200;
+      animation-name: FadeInUp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
 
       a {
         border-bottom: 2px $link-color solid;
@@ -32,43 +37,65 @@
       z-index: 200;
 
       .btn {
-        font-size: 22px;
+        font-size: 18px;
         color: $link-color;
         border-radius: 50px;
         border: 0;
-        padding: 10px 40px;
+        padding: 7px 30px;
+        outline: 0;
+
+        &:focus {
+          outline: 0;
+        }
       }
     }
 
+    &__overlay {
+      background: #000;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+    }
+
+    &__images {
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    &__items {
+      z-index: 100;
+    }
+
     &__item {
-        background: #333;
+
         color: #FFF;
         text-align: center;
         position: relative;
-        height: 800px;
-
-        &__overlay {
-          background: #000;
-          opacity: 0.7;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 10;
-        }
-
-        &__image {
-          background-color: #000;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 1;
-          background-size: cover;
-          background-position: center;
-        }
+        height: 600px;
+        z-index: 200;
 
         &__content {
             display: flex;
@@ -86,33 +113,205 @@
               flex-direction: column;
             }
 
-            &__title {
-              font-family: CompromisBold, sans-serif;
-              font-size: 64px;
-              text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2);
-              max-width: 900px;
-              margin: 30px auto;
-            }
-
             &__icon {
+              position: relative;
+              animation-name: FadeInUp;
+              animation-duration: 1s;
+              animation-delay: 0.3s;
+              animation-timing-function: ease-out;
+              animation-fill-mode: forwards;
+              opacity: 0;
+
               img {
-                height: 140px;
-                margin: 20px 0 10px 0;
+                height: 80px;
+                margin: 20px 0 0 0;
               }
             }
 
+
+            &__title {
+              position: relative;
+              font-family: CompromisBold, sans-serif;
+              font-size: 40px;
+              text-shadow: -5px 5px 0 rgba(0, 0, 0, 0.2);
+              max-width: 900px;
+              max-height: 40px * 4;
+              line-height: 1;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              margin: 20px auto;
+              animation-name: FadeInUp;
+              animation-duration: 1s;
+              animation-delay: 0.5s;
+              animation-timing-function: ease-out;
+              animation-fill-mode: forwards;
+              opacity: 0;
+            }
+
+
             &__info {
+              position: relative;
               max-width: 600px;
-              border: 3px rgba(255, 255, 255, 0.5) solid;
-              padding: 20px;
-              font-size: 18px;
+              border: 2px rgba(255, 255, 255, 0.5) solid;
+              padding: 10px;
+              padding-left: 100px;
+              font-size: 14px;
               margin: 0 auto;
               border-radius: 4px;
               text-align: left;
+              animation-name: FadeInUp;
+              animation-duration: 1s;
+              animation-delay: 0.7s;
+              animation-timing-function: ease-out;
+              animation-fill-mode: forwards;
+              opacity: 0;
+
+              &__no {
+                position: absolute;
+                top: 20px;
+                margin-top: -5px;
+                left: 20px;
+                width: 60px;
+                background: $red;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                font-size: 18px;
+                transform: rotate(10deg);
+                animation-name: RotateNO;
+                animation-duration: 1.5s;
+                animation-delay: 0.7s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+              }
             }
 
         }
 
     }
 
+}
+
+@media (min-width: $screen-md-min) {
+  .amendments {
+    &__header {
+      font-size: 36px;
+    }
+
+    &__button {
+      .btn {
+        font-size: 22px;
+        padding: 10px 40px;
+      }
+    }
+
+    &__item {
+      height: 800px;
+
+      &__content {
+        &__icon {
+          img {
+            height: 140px;
+            margin: 20px 0 0 0;
+          }
+        }
+        &__title {
+          font-size: 64px;
+          margin: 30px auto;
+          max-height: 64px * 4;
+        }
+        &__info {
+          font-size: 18px;
+          padding: 20px;
+          padding-left: 100px;
+          border-width: 3px;
+
+          &__no {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .amendments {
+    &__header {
+      margin-top: 20px;
+    }
+
+    &__item {
+      height: 500px;
+
+      &__content {
+        &__icon {
+          img {
+            height: 60px;
+          }
+        }
+
+        &__title {
+          font-size: 25px;
+          max-height: 25px * 4;
+        }
+
+        &__info {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes FadeInUp {
+    from {
+      top: 80px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+}
+
+@keyframes RotateNO {
+    0% {
+      top: 50px;
+      opacity: 0;
+      transform: rotate(10deg);
+    }
+    40% {
+      top: 20px;
+      opacity: 1;
+      transform: rotate(-5deg);
+    }
+    70% {
+      top: 20px;
+      opacity: 1;
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+}
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+
+.cross-fade-height {
+  transition: height .5s ease-in-out;
 }

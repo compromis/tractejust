@@ -28,7 +28,9 @@
     "lodash": "^4.17.4",
     "nuka-carousel": "^2.0.4",
     "react": "^15.5.4",
+    "react-css-transition-replace": "^2.2.1",
     "react-dom": "^15.5.4",
+    "react-transition-group": "^1.1.3",
     "react-translate": "^5.0.0"
   },
   "devDependencies": {

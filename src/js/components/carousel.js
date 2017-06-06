@@ -2,15 +2,12 @@ import React from 'react';
 import _ from 'lodash';
 import amendments from '../../data/amendments.json';
 import Carousel from '../nuka-carousel/carousel'; // Modified nuka-carousel
+import ReactCSSTransitionReplace from 'react-css-transition-replace';
 
 class Amendment extends React.Component {
     render(){
-
-
         return (
             <div className="amendments__item">
-              <div className="amendments__item__image" style={{backgroundImage: 'url(' + this.props.background + ')'}}></div>
-              <div className="amendments__item__overlay"></div>
               <div className="amendments__item__content">
                 <div className="container">
                   <span className="amendments__item__content__icon">
@@ -18,6 +15,7 @@ class Amendment extends React.Component {
                   </span>
                   <h2 className="amendments__item__content__title">{ this.props.text }</h2>
                   <div className="amendments__item__content__info">
+                    <div className="amendments__item__content__info__no">NO</div>
                     Esmena <u>#{this.props.id}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>
                   </div>
                 </div>
@@ -27,6 +25,22 @@ class Amendment extends React.Component {
     }
 }
 
+class AmendmentImage extends React.Component {
+  render(){
+
+    return(
+      <div className="amendments__images">
+        <ReactCSSTransitionReplace
+          transitionName="cross-fade"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+          <div key={this.props.current.id} className="amendments__image" style={{backgroundImage: 'url(/images/amendments/backgrounds/' + this.props.current.background + '.jpg)'}}></div>
+        </ReactCSSTransitionReplace>
+      </div>
+    )
+  }
+}
+
 
 class CarouselWidget extends React.Component {
   constructor(props) {
@@ -34,7 +48,8 @@ class CarouselWidget extends React.Component {
 
     this.state = {
       amendments: amendments,
-      initialAmendment: 1
+      initialAmendment: 1,
+      currentAmendment: amendments[0]
     };
   }
 
@@ -45,8 +60,15 @@ class CarouselWidget extends React.Component {
   initialAmendment(){
       let random = this.getRandomAmendment();
       this.setState({
-          initialAmendment: random
+          initialAmendment: random,
+          currentAmendment: amendments[random]
       });
+  }
+
+  updateCurrentAmendment(index){
+    this.setState({
+        currentAmendment: amendments[index]
+    });
   }
 
   getRandomAmendment(){
@@ -59,14 +81,17 @@ class CarouselWidget extends React.Component {
 
     return (
         <section className="amendments noselect">
+            <AmendmentImage current={this.state.currentAmendment} />
+            <div className="amendments__overlay"></div>
+
             <h1 className="amendments__header">
               amb un <a href="">#TracteJust</a>, podriem <br /> desenvolupar projectes com...
             </h1>
 
-            <Carousel ref="amendments" slideIndex={this.state.initialAmendment} dragging={true} easing="easeInOut" edgeEasing="easeOutCirc">
+            <Carousel ref="amendments" className="amendments__items" slideIndex={this.state.initialAmendment} dragging={false} swiping={false} easing="easeInOut" edgeEasing="easeOutCirc" updateCurrentAmendment={(index) => this.updateCurrentAmendment(index)}>
                 { this.state.amendments.map(function(amendment, i){
                     return <Amendment key={i} id={amendment.id} text={amendment.title} icon="TREN" background="/images/amendments/backgrounds/rodalies.jpeg" />;
-                }) }
+                }.bind(this)) }
             </Carousel>
         </section>
     );

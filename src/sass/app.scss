@@ -1,5 +1,11 @@
 @import '../bootstrap/customizations.scss';
 
+$red: #D5472F;
+
+body {
+  padding-top: 50px;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: Compromis, sans-serif;
 }
