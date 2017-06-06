@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { TranslatorProvider } from "react-translate";
+
 import '../fonts/fonts.scss';
 import 'bootstrap-loader';
 import '../sass/app.scss';
 
 import Layout from './layout';
 
-ReactDOM.render(
-  <Layout />,
-  document.getElementById('app')
-);
+import catalan from './i18n/ca.js';
+import spanish from './i18n/es.js';
+
+class App extends React.Component {
+
+  render(){
+    return(
+      <TranslatorProvider translations={catalan}>
+        <Layout />
+      </TranslatorProvider>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('app'));

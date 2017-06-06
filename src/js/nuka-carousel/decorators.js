@@ -39,7 +39,7 @@ const DefaultDecorators = [
         )
       },
       getRandomSlide(){
-        let random = Math.floor(Math.random() * (this.props.slideCount - 1)) + 1;
+        let random = Math.floor(Math.random() * (this.props.slideCount));
 
         if(random == this.props.currentSlide){
           return this.getRandomSlide();

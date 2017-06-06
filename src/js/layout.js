@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { translate } from "react-translate";
+
 import Header from './components/header';
 import AmendmentsRoulette from './components/amendments-roulette';
 import CarouselWidget from './components/carousel';
 
 class Layout extends React.Component {
-
   render() {
     return (
       <div>
@@ -15,7 +16,7 @@ class Layout extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              TEXT
+              {this.props.t("TITLE")}
             </div>
             <div className="col-sm-6">
                 MAPA
@@ -32,4 +33,4 @@ class Layout extends React.Component {
   }
 }
 
-module.exports = Layout;
+export default translate("Layout")(Layout);

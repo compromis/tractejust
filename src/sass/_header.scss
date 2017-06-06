@@ -51,12 +51,20 @@
       font-size: 16px;
       margin-bottom: 0;
 
+      li:last-child {
+        a {
+          padding-right: 0;
+          border-left: 1px rgba(255, 255, 255, 0.5) solid;
+        }
+      }
+
       li {
         display: inline-block;
 
 
         a {
           color: #FFF;
+          padding: 0 10px;
         }
       }
     }

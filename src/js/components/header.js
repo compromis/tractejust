@@ -1,13 +1,6 @@
 import React from 'react';
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      value: null,
-    };
-  }
 
   render() {
     return (
@@ -24,8 +17,12 @@ class Header extends React.Component {
             </div>
             <div className="languages">
               <ul>
-                <li className="active"><a href="">Valencià</a></li>
-                <li><a href="">Castellano</a></li>
+                <li className="active">
+                  <a href="">Valencià</a>
+                </li>
+                <li>
+                  <a href="">Castellano</a>
+                </li>
               </ul>
             </div>
           </div>
