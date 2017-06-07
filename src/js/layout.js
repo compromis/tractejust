@@ -3,7 +3,6 @@ import React from 'react';
 import { translate } from "react-translate";
 
 import Header from './components/header';
-import AmendmentsRoulette from './components/amendments-roulette';
 import CarouselWidget from './components/carousel';
 
 class Layout extends React.Component {

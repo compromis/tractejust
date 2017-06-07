@@ -88,7 +88,7 @@ class CarouselWidget extends React.Component {
               amb un <a href="">#TracteJust</a>, podriem <br /> desenvolupar projectes com...
             </h1>
 
-            <Carousel ref="amendments" className="amendments__items" slideIndex={this.state.initialAmendment} dragging={false} swiping={false} easing="easeInOut" edgeEasing="easeOutCirc" updateCurrentAmendment={(index) => this.updateCurrentAmendment(index)}>
+            <Carousel ref="amendments" className="amendments__items" slideIndex={this.state.initialAmendment} easing="easeInOut" edgeEasing="easeOutCirc" updateCurrentAmendment={(index) => this.updateCurrentAmendment(index)}>
                 { this.state.amendments.map(function(amendment, i){
                     return <Amendment key={i} id={amendment.id} text={amendment.title} icon="TREN" background="/images/amendments/backgrounds/rodalies.jpeg" />;
                 }.bind(this)) }

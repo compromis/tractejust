@@ -372,6 +372,7 @@ const Carousel = createReactClass({
       this.clickSafe = false;
     }
 
+
     var slidesToShow = this.props.slidesToShow;
     if (this.props.slidesToScroll === 'auto') {
       slidesToShow = this.state.slidesToScroll;
@@ -402,6 +403,8 @@ const Carousel = createReactClass({
 
     this.setState({
       dragging: false
+    }, function(){
+      this.props.updateCurrentAmendment(this.state.currentSlide);
     });
   },
 
