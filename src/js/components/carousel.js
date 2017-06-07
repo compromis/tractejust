@@ -3,27 +3,9 @@ import _ from 'lodash';
 import amendments from '../../data/amendments.json';
 import Carousel from '../nuka-carousel/carousel'; // Modified nuka-carousel
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
+import { translate } from "react-translate";
 
-class Amendment extends React.Component {
-    render(){
-        return (
-            <div className="amendments__item">
-              <div className="amendments__item__content">
-                <div className="container">
-                  <span className="amendments__item__content__icon">
-                      <img src={'../../images/amendments/icons/' + this.props.icon + '.svg'} />
-                  </span>
-                  <h2 className="amendments__item__content__title">{ this.props.text }</h2>
-                  <div className="amendments__item__content__info">
-                    <div className="amendments__item__content__info__no">NO</div>
-                    Esmena <u>#{this.props.id}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>
-                  </div>
-                </div>
-              </div>
-          </div>
-        )
-    }
-}
+import Amendment from './amendment.js';
 
 class AmendmentImage extends React.Component {
   render(){
@@ -85,7 +67,11 @@ class CarouselWidget extends React.Component {
             <div className="amendments__overlay"></div>
 
             <h1 className="amendments__header">
-              amb un <a href="">#TracteJust</a>, podriem <br /> desenvolupar projectes com...
+              {this.props.t('HEADER_1')}
+              <a href="">{this.props.t('HASHTAG')}</a>
+              {this.props.t('HEADER_2')}
+              <br />
+              {this.props.t('HEADER_3')}
             </h1>
 
             <Carousel ref="amendments" className="amendments__items" slideIndex={this.state.initialAmendment} easing="easeInOut" edgeEasing="easeOutCirc" updateCurrentAmendment={(index) => this.updateCurrentAmendment(index)}>
@@ -98,4 +84,4 @@ class CarouselWidget extends React.Component {
   }
 }
 
-module.exports = CarouselWidget;
+export default translate('CarouselWidget')(CarouselWidget);

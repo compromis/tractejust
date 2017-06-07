@@ -2,13 +2,14 @@ import React from 'react';
 import createReactClass from 'create-react-class';
 
 const DefaultDecorators = [
-  /*{
+  {
     component: createReactClass({
       render() {
         return (
           <button
             style={this.getButtonStyles(this.props.currentSlide === 0 && !this.props.wrapAround)}
-            onClick={this.handleClick}>PREV</button>
+            className="amendments__nav amendments__nav--prev hidden-xs"
+            onClick={this.handleClick}><span className="glyphicon glyphicon-chevron-left"></span></button>
         )
       },
       handleClick(e) {
@@ -17,18 +18,34 @@ const DefaultDecorators = [
       },
       getButtonStyles(disabled) {
         return {
-          border: 0,
-          background: 'rgba(0,0,0,0.4)',
-          color: 'white',
-          padding: 10,
-          outline: 0,
-          opacity: disabled ? 0.3 : 1,
-          cursor: 'pointer'
+          opacity: disabled ? 0.3 : null,
         }
       }
     }),
     position: 'CenterLeft'
-  },*/
+  },
+  {
+    component: createReactClass({
+      render() {
+        return (
+          <button
+            style={this.getButtonStyles(this.props.currentSlide + this.props.slidesToScroll >= this.props.slideCount && !this.props.wrapAround)}
+            className="amendments__nav amendments__nav--next hidden-xs"
+            onClick={this.handleClick}><span className="glyphicon glyphicon-chevron-right"></span></button>
+        )
+      },
+      handleClick(e) {
+        e.preventDefault();
+        this.props.nextSlide();
+      },
+      getButtonStyles(disabled) {
+        return {
+          opacity: disabled ? 0.3 : null,
+        }
+      }
+    }),
+    position: 'CenterRight'
+  },
   {
     component: createReactClass({
       render() {

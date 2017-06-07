@@ -26,6 +26,20 @@
       }
     }
 
+    &__nav {
+      opacity: 0.5;
+      border: 0;
+      background: transparent;
+      color: #FFF;
+      padding: 30px;
+      font-size: 30px;
+      outline: 0;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
 
     &__button {
       /*position: absolute;
@@ -35,6 +49,12 @@
       text-align: center;*/
       margin-bottom: 40px;
       z-index: 200;
+      animation-name: FadeIn;
+      animation-duration: 1s;
+      animation-delay: 1.3s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+      opacity: 0;
 
       .btn {
         font-size: 18px;
@@ -169,12 +189,12 @@
               &__no {
                 position: absolute;
                 top: 20px;
-                margin-top: -5px;
+                margin-top: -9px;
                 left: 20px;
                 width: 60px;
                 background: $red;
                 border-radius: 5px;
-                padding: 10px;
+                padding: 5px;
                 text-align: center;
                 font-size: 18px;
                 transform: rotate(10deg);
@@ -228,6 +248,7 @@
 
           &__no {
             margin-top: 2px;
+            padding: 10px;
           }
         }
       }
@@ -271,6 +292,15 @@
     }
     to {
       top: 0;
+      opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
       opacity: 1;
     }
 }

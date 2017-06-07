@@ -5,9 +5,14 @@ export default {
   Layout: {
     TITLE: "Hello world",
     KEY_WITH_PARAMS: "Hello {{name}}",
-    KEY_WITH_PLURAL: [
-      "You have {{n}} message",
-      "You have {{n}} messages",
-    ],
   },
+  CarouselWidget: {
+    HEADER_1: "amb un ",
+    HASHTAG: "#TracteJust",
+    HEADER_2: ", podriem",
+    HEADER_3: "desenvolupar projectes com..."
+  },
+  Amendment: {
+    AMENDMENT_INFO: "Esmena <u>#{{num}}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>"
+  }
 }
