@@ -20,7 +20,7 @@
       a {
         border-bottom: 2px $link-color solid;
 
-        &:hover {
+        &:hover, &:active, &:focus {
           text-decoration: none;
         }
       }
@@ -203,6 +203,10 @@
                 animation-delay: 0.7s;
                 animation-timing-function: ease-out;
                 animation-fill-mode: forwards;
+
+                &:hover {
+                  transform: rotate(-5deg);
+                }
               }
             }
 

@@ -4,6 +4,12 @@ import { translate } from "react-translate";
 
 import Header from './components/header';
 import CarouselWidget from './components/carousel';
+import Map from './components/map';
+import MainText from './components/main-text';
+import Percentages from './components/percentages';
+import Chart from './components/chart';
+import Debt from './components/debt';
+import Footer from './components/footer';
 
 class Layout extends React.Component {
   render() {
@@ -12,21 +18,26 @@ class Layout extends React.Component {
         <Header />
         <CarouselWidget />
 
-        <div className="container">
+        <div className="container main-container" id="content">
           <div className="row">
             <div className="col-sm-6">
-              {this.props.t("TITLE")}
+                <MainText />
+                <Chart />
             </div>
             <div className="col-sm-6">
-                MAPA
+                <Map />
+                <Percentages />
+                <Debt />
             </div>
           </div>
           <div className="row">
             <div className="col-sm-12">
-              BAR
+              <Chart />
             </div>
           </div>
         </div>
+
+        <Footer />
       </div>
     );
   }

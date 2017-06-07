@@ -4,6 +4,7 @@ import amendments from '../../data/amendments.json';
 import Carousel from '../nuka-carousel/carousel'; // Modified nuka-carousel
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import { translate } from "react-translate";
+import $ from 'jquery';
 
 import Amendment from './amendment.js';
 
@@ -59,6 +60,16 @@ class CarouselWidget extends React.Component {
       return random;
   }
 
+  scrollDown(e){
+    e.preventDefault();
+
+    let pos = $("#content").position();
+
+    $("html, body").animate({
+      scrollTop: (pos.top - 50)
+    }, 500, 'swing');
+  }
+
   render() {
 
     return (
@@ -68,15 +79,22 @@ class CarouselWidget extends React.Component {
 
             <h1 className="amendments__header">
               {this.props.t('HEADER_1')}
-              <a href="">{this.props.t('HASHTAG')}</a>
+              <a href="#" onClick={(e) => this.scrollDown(e)}>{this.props.t('HASHTAG')}</a>
               {this.props.t('HEADER_2')}
               <br />
               {this.props.t('HEADER_3')}
             </h1>
 
-            <Carousel ref="amendments" className="amendments__items" slideIndex={this.state.initialAmendment} easing="easeInOut" edgeEasing="easeOutCirc" updateCurrentAmendment={(index) => this.updateCurrentAmendment(index)}>
+            <Carousel ref="amendments"
+                      className="amendments__items"
+                      slideIndex={this.state.initialAmendment}
+                      afterSlide={(index) => this.updateCurrentAmendment(index)}
+                      autoplay={true}
+                      autoplayInterval={6000}
+                      easing="easeInOut"
+                      edgeEasing="easeOutCirc">
                 { this.state.amendments.map(function(amendment, i){
-                    return <Amendment key={i} id={amendment.id} text={amendment.title} icon="TREN" background="/images/amendments/backgrounds/rodalies.jpeg" />;
+                    return <Amendment key={i} id={amendment.id} text={amendment.title} icon={amendment.icon} />;
                 }.bind(this)) }
             </Carousel>
         </section>

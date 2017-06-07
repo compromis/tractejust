@@ -59,6 +59,7 @@ var config = {
               use: 'url-loader?limit=10000&name=fonts/[name].[ext]'
           },
           {   test: /\.(ttf|eot|svg)$/,
+              exclude: SRC_DIR + '/images',
               use: 'file-loader?name=fonts/[name].[ext]'
           },
           {

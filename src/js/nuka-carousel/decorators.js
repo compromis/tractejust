@@ -69,7 +69,6 @@ const DefaultDecorators = [
         e.preventDefault();
         let random = this.getRandomSlide();
         this.props.goToSlide(random);
-        this.props.updateCurrentAmendment(random);
       },
     }),
     position: 'BottomCenter'

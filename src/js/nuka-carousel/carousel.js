@@ -195,8 +195,7 @@ const Carousel = createReactClass({
                   wrapAround={self.props.wrapAround}
                   nextSlide={self.nextSlide}
                   previousSlide={self.previousSlide}
-                  goToSlide={self.goToSlide}
-                  updateCurrentAmendment={self.props.updateCurrentAmendment} />
+                  goToSlide={self.goToSlide} />
               </div>
             )
           })
@@ -403,8 +402,6 @@ const Carousel = createReactClass({
 
     this.setState({
       dragging: false
-    }, function(){
-      this.props.updateCurrentAmendment(this.state.currentSlide);
     });
   },
 
@@ -523,15 +520,19 @@ const Carousel = createReactClass({
       return;
     }
 
+    let slideTo;
+
     if (this.props.wrapAround) {
-      this.goToSlide(this.state.currentSlide + this.state.slidesToScroll);
+      slideTo = this.state.currentSlide + this.state.slidesToScroll;
+      this.goToSlide(slideTo);
     } else {
       if (this.props.slideWidth !== 1) {
-        return this.goToSlide(this.state.currentSlide + this.state.slidesToScroll);
+        slideTo = this.state.currentSlide + this.state.slidesToScroll;
+        return this.goToSlide(slideTo);
       }
-      this.goToSlide(
-        Math.min(this.state.currentSlide + this.state.slidesToScroll, childrenCount - slidesToShow)
-      );
+
+      slideTo = Math.min(this.state.currentSlide + this.state.slidesToScroll, childrenCount - slidesToShow);
+      this.goToSlide(slideTo);
     }
   },
 
@@ -539,11 +540,13 @@ const Carousel = createReactClass({
     if (this.state.currentSlide <= 0 && !this.props.wrapAround) {
       return;
     }
-
+    let slideTo;
     if (this.props.wrapAround) {
-      this.goToSlide(this.state.currentSlide - this.state.slidesToScroll);
+      slideTo = this.state.currentSlide - this.state.slidesToScroll;
+      this.goToSlide(slideTo);
     } else {
-      this.goToSlide(Math.max(0, this.state.currentSlide - this.state.slidesToScroll));
+      let slideTo = Math.max(0, this.state.currentSlide - this.state.slidesToScroll);
+      this.goToSlide(slideTo);
     }
   },
 

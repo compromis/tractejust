@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 801.1 259.6" style="enable-background:new 0 0 801.1 259.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DA6730;}
+	.st1{fill:#656871;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#8A919B;}
+	.st4{font-family:'AkkuratPro-Bold';}
+	.st5{font-size:26.8269px;}
+	.st6{font-family:'AkkuratPro-Regular';}
+	.st7{opacity:0.8;fill:#FFFFFF;}
+	.st8{font-size:18.5284px;}
+	.st9{font-size:15px;}
+	.st10{fill:none;stroke:#DA672E;stroke-width:2;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#DA672E;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5.3353,5.3353,5.3353,5.3353;}
+	.st12{fill:none;stroke:#DA672E;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:5.3353,5.3353,5.3353,5.3353,5.3353,5.3353;}
+	.st13{fill:#414042;}
+	.st14{font-family:'Akkurat-Bold';}
+	.st15{font-size:19.941px;}
+</style>
+<rect x="9.3" y="12.7" class="st0" width="779.6" height="104.1"/>
+<g>
+	<rect x="8.3" y="11.7" class="st1" width="638.6" height="96.6"/>
+	<path class="st2" d="M645.9,12.7v94.6H9.3V12.7H645.9 M647.9,10.7h-2H9.3h-2v2v94.6v2h2h636.6h2v-2V12.7V10.7L647.9,10.7z"/>
+</g>
+<g>
+	<rect x="8.5" y="11.9" class="st3" width="328.8" height="85.2"/>
+	<path class="st2" d="M336.6,12.7v83.7H9.3V12.7H336.6 M338,11.2h-1.5H9.3H7.8v1.5v83.7v1.5h1.5h327.3h1.5v-1.5V12.7V11.2L338,11.2z
+		"/>
+</g>
+<text transform="matrix(1 0 0 1 664.6777 46.6699)" class="st2 st4 st5">1.180M €</text>
+<text transform="matrix(1 0 0 1 518.6777 46.6699)" class="st2 st6 st5">879,2M €</text>
+<text transform="matrix(1 0 0 1 210.6777 46.6699)" class="st2 st6 st5">386,1M €</text>
+<text transform="matrix(1 0 0 1 242 68.75)" class="st7 st6 st8">Realitzat</text>
+<text transform="matrix(1 0 0 1 516.0789 68.75)" class="st7 st6 st8">Pressupostat</text>
+<text transform="matrix(1 0 0 1 680.4122 68.4168)" class="st7 st6 st8">Tracte Just</text>
+<text transform="matrix(1 0 0 1 532.2142 217.8775)"><tspan x="0" y="0" class="st0 st6 st9">Inversions que ens correspondrien</tspan><tspan x="69.1" y="18" class="st0 st6 st9">per número d’habitants</tspan></text>
+<g>
+	<g>
+		<line class="st10" x1="763" y1="111.3" x2="763" y2="114.3"/>
+		<line class="st11" x1="763" y1="119.7" x2="763" y2="138.3"/>
+		<line class="st12" x1="763" y1="141" x2="763" y2="234.4"/>
+		<line class="st10" x1="763" y1="237" x2="763" y2="240"/>
+	</g>
+</g>
+<rect x="564.1" y="-80.3" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 706.8345 -423.894)" class="st13" width="2.5" height="443.6"/>
+<rect x="334.7" y="131.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 477.3803 -212.3316)" class="st13" width="20.4" height="2.8"/>
+<rect x="775.5" y="131.1" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 918.2467 -653.1981)" class="st13" width="20.4" height="2.8"/>
+<text transform="matrix(1 0 0 1 527.0686 166.165)" class="st13 st14 st15">793,9M€</text>
+<text transform="matrix(1 0 0 1 459.4061 184.915)" class="st13 st6 st9">Milions que s’han deixat d’invertir</text>
+</svg>
