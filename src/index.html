@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html lang="ca">
   <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-title" content="Compromís">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="theme-color" content="#E66222">
+
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <meta name="robots" content="index, follow" />
+  	<meta name="keywords" content="coalició compromís, compromís, bloc, bnv, bloc nacionalista valencià, iniciativa, verds, ecosocialistes, socialistes valencians, valencianisme, valencianistes, esquerra, valencia, alacant, alicante, castelló, castellón, elx, elche, gandia, denia, alcoi, morera, oltra, pañella, mireia, monica, mollà, joan ribó, somriure, política, ecologisme, ecologismo, verdes, izquierda, progresistas, rescatem personas, rescatar personas, austericidio, austericidi" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>" />
+  	<meta property="twitter:site" content="@compromis"/>
+  	<meta property="twitter:account_id" content="1510092958" />
+
+  	<!-- Social -->
+  	<meta property="fb:app_id" content="252515324782640" />
+  	<meta property="og:email" content="info@compromis.net"/>
+  	<meta property="og:type" content="website"/>
+  	<meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>"/>
+  	<meta property="og:locale" content="ca_ES"/>
+  	<meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>"/>
+  	<meta property="og:url" content="https://compromis.net"/>
+  	<meta property="og:image" content="https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg"/>
+  	<meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>"/>
+  	<meta property="twitter:card" content="summary"/>
+  	<meta property="twitter:title" content="<%= htmlWebpackPlugin.options.title %>"/>
+  	<meta property="twitter:description" content="<%= htmlWebpackPlugin.options.description %>"/>
+  	<meta property="twitter:image" content="https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg"/>
+  	<meta property="twitter:url" content="https://compromis.net"/>
+
   </head>
   <body>
+
     <noscript>
-      You need to enable JavaScript to run this app.
+      És necessari habilitat JavaScript per poder accedir a aquesta aplicació.
     </noscript>
+
     <div id="app"></div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-24972665-22', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>

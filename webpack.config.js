@@ -21,9 +21,10 @@ var cssConfig = isProd ? cssProd : cssDev;
 
 var htmlPlugin = new HtmlWebpackPlugin({
             title: 'Tracte Just',
-            // minify: {
-            //     collapseWhitespace: true
-            // },
+            description: '',
+            minify: {
+                 collapseWhitespace: true
+            },
             hash: true,
             template: './src/index.html',
 });
@@ -63,11 +64,11 @@ var config = {
               use: 'file-loader?name=fonts/[name].[ext]'
           },
           {
-                test: /\.(jpe?g|png|gif)$/i,
-                use: [
+              test: /\.(jpe?g|png|gif)$/i,
+              use: [
                   'file-loader?name=images/[name].[ext]',
                   'image-webpack-loader?bypassOnDebug'
-                ]
+              ]
           }
       ]
   },
