@@ -1,10 +1,9 @@
 import React from 'react';
-import _ from 'lodash';
 import amendments from '../../data/amendments.json';
 import Carousel from '../nuka-carousel/carousel'; // Modified nuka-carousel
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import { translate } from "react-translate";
-import $ from 'jquery';
+//import $ from 'jquery';
 
 import Amendment from './amendment.js';
 
@@ -55,7 +54,7 @@ class CarouselWidget extends React.Component {
   }
 
   getRandomAmendment(){
-      const max = _.size(this.state.amendments) - 1;
+      const max = Object.keys(this.state.amendments).length - 1;
       let random = Math.floor(Math.random() * max) + 1;
       return random;
   }

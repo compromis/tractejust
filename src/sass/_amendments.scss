@@ -1,3 +1,21 @@
+@mixin animations($animation-name, $duration, $delay, $fill-mode) {
+  -webkit-animation-name: $animation-name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-fill-mode: $fill-mode;
+  -moz-animation-name: $animation-name;
+  -moz-animation-duration: $duration;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-delay: $delay;
+  -moz-animation-fill-mode: $fill-mode;
+  animation-name: $animation-name;
+  animation-duration: $duration;
+  animation-timing-function: ease-out;
+  animation-delay: $delay;
+  animation-fill-mode: $fill-mode;
+}
+
 .amendments {
     position: relative;
     background: #222;
@@ -13,9 +31,7 @@
       line-height: 150%;
       text-shadow: -3px 3px 0 rgba(0, 0, 0, 0.2);
       z-index: 200;
-      animation-name: FadeInUp;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
+      @include animations(FadeInUp, 1s, 0, none);
 
       a {
         border-bottom: 2px $link-color solid;
@@ -49,11 +65,7 @@
       text-align: center;*/
       margin-bottom: 40px;
       z-index: 200;
-      animation-name: FadeIn;
-      animation-duration: 1s;
-      animation-delay: 1.3s;
-      animation-timing-function: ease-out;
-      animation-fill-mode: forwards;
+      @include animations(FadeIn, 1s, 1.2s, forwards);
       opacity: 0;
 
       .btn {
@@ -135,11 +147,7 @@
 
             &__icon {
               position: relative;
-              animation-name: FadeInUp;
-              animation-duration: 1s;
-              animation-delay: 0.3s;
-              animation-timing-function: ease-out;
-              animation-fill-mode: forwards;
+              @include animations(FadeInUp, 1s, 0.3s, forwards);
               opacity: 0;
 
               img {
@@ -160,11 +168,7 @@
               text-overflow: ellipsis;
               overflow: hidden;
               margin: 20px auto;
-              animation-name: FadeInUp;
-              animation-duration: 1s;
-              animation-delay: 0.5s;
-              animation-timing-function: ease-out;
-              animation-fill-mode: forwards;
+              @include animations(FadeInUp, 1s, 0.5s, forwards);
               opacity: 0;
             }
 
@@ -179,11 +183,7 @@
               margin: 0 auto;
               border-radius: 4px;
               text-align: left;
-              animation-name: FadeInUp;
-              animation-duration: 1s;
-              animation-delay: 0.7s;
-              animation-timing-function: ease-out;
-              animation-fill-mode: forwards;
+              @include animations(FadeInUp, 1s, 0.7s, forwards);
               opacity: 0;
 
               &__no {
@@ -198,11 +198,7 @@
                 text-align: center;
                 font-size: 18px;
                 transform: rotate(10deg);
-                animation-name: RotateNO;
-                animation-duration: 1.5s;
-                animation-delay: 0.7s;
-                animation-timing-function: ease-out;
-                animation-fill-mode: forwards;
+                @include animations(RotateNO, 1.5s, 0.7s, forwards);
 
                 &:hover {
                   transform: rotate(-5deg);

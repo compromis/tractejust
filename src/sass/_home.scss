@@ -97,6 +97,10 @@
 .heading--levante {
   padding: 0;
   margin-bottom: 20px;
+
+  .heading__source img {
+    height: 25px;
+  }
 }
 
 .chart {
@@ -132,5 +136,15 @@
 
   &__number {
     float: right;
+  }
+}
+
+.debt {
+  margin-top: $block-padding;
+
+  &__counter {
+    font-family: CompromisBold, sans-serif;
+    font-size: 30px;
+    color: $red;
   }
 }

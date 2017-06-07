@@ -22,18 +22,12 @@ class Layout extends React.Component {
           <div className="row">
             <div className="col-sm-6">
                 <MainText />
+                <Chart />
             </div>
             <div className="col-sm-6">
                 <Map />
-                <Percentages />  
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-12">
-              <Chart />
-            </div>
-            <div className="col-sm-12">
-              <Debt />
+                <Percentages />
+                <Debt />
             </div>
           </div>
         </div>

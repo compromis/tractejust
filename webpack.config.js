@@ -63,10 +63,6 @@ var config = {
               use: 'file-loader?name=fonts/[name].[ext]'
           },
           {
-              test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/,
-              use: 'imports-loader?jQuery=jquery'
-          },
-          {
                 test: /\.(jpe?g|png|gif)$/i,
                 use: [
                   'file-loader?name=images/[name].[ext]',
@@ -84,7 +80,10 @@ var config = {
   plugins: [
     extractPlugin,
     htmlPlugin
-  ]
+  ],
+  externals: {
+    jquery: 'jQuery'
+  }
 };
 
 module.exports = config;
