@@ -9,6 +9,8 @@ import MainText from './components/main-text';
 import Percentages from './components/percentages';
 import Chart from './components/chart';
 import Debt from './components/debt';
+import Video from './components/video';
+import TakeAction from './components/take-action';
 import Footer from './components/footer';
 
 class Layout extends React.Component {
@@ -23,15 +25,16 @@ class Layout extends React.Component {
             <div className="col-sm-6">
                 <MainText />
                 <Chart />
+                <TakeAction />
             </div>
             <div className="col-sm-6">
                 <Map />
                 <Percentages />
                 <Debt />
+                <Video />
             </div>
           </div>
         </div>
-
         <Footer />
       </div>
     );

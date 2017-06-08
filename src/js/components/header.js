@@ -1,6 +1,11 @@
 import React from 'react';
+import ReactFBLike from 'react-fb-like';
 
 class Header extends React.Component {
+
+  componentDidMount() {
+    twttr.widgets.load()
+  }
 
   render() {
     return (
@@ -16,13 +21,20 @@ class Header extends React.Component {
             <a className="navbar-brand" href="#">
               <img src="https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina.png" alt="Compromís" />
             </a>
-            <p className="navbar-text navbar-campaign-name">
-              <a href="">#TracteJust</a>
-            </p>
+            <div className="navbar-text navbar-campaign-name">
+              <a href="/">#TracteJust</a>
+            </div>
           </div>
 
           <div className="collapse navbar-collapse" id="languages-navbar">
             <ul className="nav navbar-nav navbar-right">
+              <li>
+                <div className="share-buttons">
+                  <ReactFBLike language="es_ES" appId="252515324782640" version="v2.8" href="http://tractejust.org" layout="button_count" action="like" size="small" showFaces="false" share="true" />
+                  <a href="https://twitter.com/share" className="twitter-share-button" data-text="Test" data-hashtags="TracteJust" data-related="compromis" data-lang="es" data-dnt="true" data-show-count="false">Tweet</a>
+                </div>
+              </li>
+
               <li><a href="#">Valencià</a></li>
               <li><a href="#">Castellano</a></li>
             </ul>

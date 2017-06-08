@@ -59,6 +59,30 @@
   }
 }
 
+.share-buttons {
+  margin-top: 10px;
+  margin-left: 20px;
+
+  padding-right: 20px;
+
+  .twitter-share-button {
+    top: 5px;
+    position: relative !important;
+    margin-left: 4px;
+  }
+}
+
+
+.navbar-right {
+  li {
+    border-left: 1px rgba(255, 255, 255, 0.5) solid;
+  }
+
+  li:first-child {
+    border-left: 0;
+  }
+}
+
 @-webkit-keyframes HeaderOrange {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }

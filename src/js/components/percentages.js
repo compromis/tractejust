@@ -10,14 +10,14 @@ class Percentages extends React.Component {
   render() {
     return (
       <div className="block percentages">
-        <span className="heading heading--abc">
+        <a href="" target="_blank" className="heading heading--abc">
           <span className="heading__source">
             <img src="/images/map/abc.png" />
           </span>
           <span className="heading__text">
             Montoro admite que la Comunidad Valenciana es la peor financiada de España
           </span>
-        </span>
+        </a>
 
         <hr />
 
@@ -43,6 +43,8 @@ class Percentages extends React.Component {
           <div className="col-xs-4">PIB</div>
           <div className="col-xs-4 percentages__number--red">INVERSIÓ REAL</div>
         </div>
+        <hr />
+        <p>Al territori valencià som l'<strong>11% de tota la població</strong> de l'Estat i representem el <strong>10% del PIB</strong>. Però, només rebem un <strong>6,5% del total de les inversions</strong> territorialitzades pressupostades, i d'estes inversions, el govern central només va executar la mitat en 2016, és a dir, que en aquell any, únicament vàrem rebre un <strong>3,5% de totes les inversions</strong> de l'Estat.</p>
       </div>
     );
   }

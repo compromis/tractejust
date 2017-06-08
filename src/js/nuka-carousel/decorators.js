@@ -51,7 +51,7 @@ const DefaultDecorators = [
       render() {
         return (
           <div className="amendments__button">
-            <button className="btn btn-default" onClick={this.handleClick}>Què mes?</button>
+            <button className="btn btn-default" onClick={this.handleClick}><span className="glyphicon glyphicon glyphicon-refresh"></span> Què mes?</button>
           </div>
         )
       },

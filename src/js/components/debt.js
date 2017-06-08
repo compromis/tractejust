@@ -41,7 +41,10 @@ class Debt extends React.Component {
 
     return (
       <div className="block debt">
-        <span className="debt__counter">{formattedNumber}</span>
+        <h2>Deute històric</h2>
+        <p>Lorem ipsum</p>
+        <div className="debt__counter"><span className="glyphicon glyphicon-arrow-up"></span> {formattedNumber}</div>
+        <p>Lorem ipsum</p>
       </div>
     );
   }
