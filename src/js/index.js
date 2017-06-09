@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { TranslatorProvider } from "react-translate";
 
 import '../fonts/fonts.scss';
-import 'bootstrap-loader';
 import '../sass/app.scss';
 
 import Layout from './layout';

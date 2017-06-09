@@ -17,31 +17,34 @@ var cssProd = ExtractTextPlugin.extract({
 
 var cssConfig = isProd ? cssProd : cssDev;
 
-//var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
+var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
 
 var htmlPlugin = new HtmlWebpackPlugin({
             title: 'Tracte Just',
             description: '',
-            minify: {
+            /*minify: {
                  collapseWhitespace: true
-            },
+            },*/
             hash: true,
             template: './src/index.html',
+            chunksSortMode: packageSort(['bootstrap', 'app'])
 });
 
 var extractPlugin = new ExtractTextPlugin({
-            filename: '/css/[name].css',
+            filename: 'css/[name].css',
             disable: !isProd,
             allChunks: true
 });
 
 var config = {
   entry: {
+    bootstrap: bootstrapConfig,
     app: SRC_DIR + '/js/index.js'
   },
   output: {
     path: DIST_DIR,
-    filename: 'js/[name].bundle.js'
+    filename: 'js/[name].bundle.js',
+    publicPath: '/'
   },
   module : {
       loaders: [
@@ -81,10 +84,24 @@ var config = {
   plugins: [
     extractPlugin,
     htmlPlugin
-  ],
-  externals: {
-    jquery: 'jQuery'
-  }
+  ]
+};
+
+function packageSort(packages) {
+    return function sort(left, right) {
+        var leftIndex = packages.indexOf(left.names[0]);
+        var rightindex = packages.indexOf(right.names[0]);
+
+        if ( leftIndex < 0 || rightindex < 0) {
+            throw "unknown package";
+        }
+
+        if (leftIndex > rightindex){
+            return 1;
+        }
+
+        return -1;
+    }
 };
 
 module.exports = config;

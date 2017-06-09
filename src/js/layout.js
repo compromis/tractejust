@@ -14,6 +14,7 @@ import TakeAction from './components/take-action';
 import Footer from './components/footer';
 
 class Layout extends React.Component {
+
   render() {
     return (
       <div>

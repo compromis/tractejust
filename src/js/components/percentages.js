@@ -1,4 +1,5 @@
 import React from 'react';
+import { translate } from "react-translate";
 
 import SVGPeople from 'react-svg-inline-loader!../../images/icon-people.svg';
 import SVGPIB from 'react-svg-inline-loader!../../images/icon-pib.svg';
@@ -10,7 +11,7 @@ class Percentages extends React.Component {
   render() {
     return (
       <div className="block percentages">
-        <a href="" target="_blank" className="heading heading--abc">
+        <a href="http://www.abc.es/local-comunidad-valenciana/20150131/abci-montoro-financiacion-201501311558.html" target="_blank" className="heading heading--abc">
           <span className="heading__source">
             <img src="/images/map/abc.png" />
           </span>
@@ -39,15 +40,15 @@ class Percentages extends React.Component {
           </div>
         </div>
         <div className="row percentages__legend">
-          <div className="col-xs-4">POBLACIÓ</div>
-          <div className="col-xs-4">PIB</div>
-          <div className="col-xs-4 percentages__number--red">INVERSIÓ REAL</div>
+          <div className="col-xs-4">{this.props.t('POPULATION')}</div>
+          <div className="col-xs-4">{this.props.t('GDP')}</div>
+          <div className="col-xs-4 percentages__number--red">{this.props.t('ACTUAL')}</div>
         </div>
         <hr />
-        <p>Al territori valencià som l'<strong>11% de tota la població</strong> de l'Estat i representem el <strong>10% del PIB</strong>. Però, només rebem un <strong>6,5% del total de les inversions</strong> territorialitzades pressupostades, i d'estes inversions, el govern central només va executar la mitat en 2016, és a dir, que en aquell any, únicament vàrem rebre un <strong>3,5% de totes les inversions</strong> de l'Estat.</p>
+        <p dangerouslySetInnerHTML={{__html: this.props.t('TEXT')}}></p>
       </div>
     );
   }
 }
 
-export default Percentages;
+export default translate('Percentages')(Percentages);

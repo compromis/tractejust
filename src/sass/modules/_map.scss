@@ -1,0 +1,14 @@
+.map {
+  position: relative;
+  padding: 0;
+
+  &__legend {
+    position: absolute;
+    bottom: $block-padding;
+    left: $block-padding;
+    font-size: 18px;
+    font-family: Compromis;
+    color: #888;
+    line-height: 1;
+  }
+}

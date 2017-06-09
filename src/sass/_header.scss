@@ -2,10 +2,10 @@
   margin-bottom: 0;
   border: 0;
   border-radius: 0;
-  background: linear-gradient(270deg, #D4432F, #E28333);
+  @include compromis-gradient;
   background-size: 200% 100%;
   -webkit-animation: HeaderOrange 15s ease infinite;
-  -z-animation: HeaderOrange 15s ease infinite;
+  -moz-animation: HeaderOrange 15s ease infinite;
   -o-animation: HeaderOrange 15s ease infinite;
   animation: HeaderOrange 15s ease infinite;
 
@@ -62,7 +62,6 @@
 .share-buttons {
   margin-top: 10px;
   margin-left: 20px;
-
   padding-right: 20px;
 
   .twitter-share-button {
@@ -81,22 +80,6 @@
   li:first-child {
     border-left: 0;
   }
-}
-
-@-webkit-keyframes HeaderOrange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
-}
-@-moz-keyframes HeaderOrange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
-}
-@keyframes HeaderOrange {
-  0% { background-position: 0% 50% }
-  50% { background-position: 100% 50% }
-  100% { background-position: 0% 50% }
 }
 
 @media (min-width: $screen-md-min) {

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactFBLike from 'react-fb-like';
 
 class Video extends React.Component {
 
@@ -14,13 +13,7 @@ class Video extends React.Component {
             frameBorder="0"
             allowTransparency={true}
             allowFullScreen={true}></iframe>
-            <p>Comparteix...</p>
         </div>
-
-        {/*}<div className="video__share">
-          <ReactFBLike language="es_ES" appId="252515324782640" version="v2.8" href="http://tractejust.org" layout="button_count" action="like" size="small" showFaces="false" share="true" />
-          <a href="https://twitter.com/share" className="twitter-share-button" data-text="Test" data-hashtags="TracteJust" data-related="compromis" data-lang="es" data-dnt="true" data-show-count="false">Tweet</a>
-        </div>*/}
       </div>
     );
   }

@@ -1,0 +1,19 @@
+.footer {
+  color: #555;
+  font-size: 15px;
+
+  &__logo {
+    opacity: 0.9;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  &__social-plugins {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  hr {
+    border-top: 1px #CCC solid;
+  }
+}

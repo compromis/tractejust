@@ -2,7 +2,32 @@
 
 $red: #A73C2E;
 $gray: #646871;
+$gray2: #8A919B;
 $block-padding: 30px;
+$gradient-from: #D4432F;
+$gradient-to: #E28333;
+
+@mixin compromis-gradient {
+  background: linear-gradient(270deg, $gradient-from, $gradient-to);
+}
+
+@mixin animations($animation-name, $duration, $delay, $fill-mode) {
+  -webkit-animation-name: $animation-name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: $delay;
+  -webkit-animation-fill-mode: $fill-mode;
+  -moz-animation-name: $animation-name;
+  -moz-animation-duration: $duration;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-delay: $delay;
+  -moz-animation-fill-mode: $fill-mode;
+  animation-name: $animation-name;
+  animation-duration: $duration;
+  animation-timing-function: ease-out;
+  animation-delay: $delay;
+  animation-fill-mode: $fill-mode;
+}
 
 body {
   padding-top: 50px;
@@ -33,4 +58,5 @@ strong {
 
 @import 'header';
 @import 'home';
-@import 'amendments';
+@import 'footer';
+@import 'animations';

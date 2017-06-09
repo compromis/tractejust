@@ -8,6 +8,11 @@
     line-height: 150%;
   }
 }
+
+.block--animate {
+  @include animations(FadeInUp, 1s, 0, none);
+}
+
 .main-text {
 
   h2 {
@@ -22,53 +27,6 @@
   p {
     font-size: 18px;
     line-height: 150%;
-  }
-}
-
-.percentages {
-  margin-top: $block-padding;
-  color: $gray;
-
-  .col-xs-4 {
-    text-align: center;
-  }
-
-  svg {
-    max-width: 50px;
-  }
-
-  &__numbers {
-    font-size: 30px;
-    font-family: CompromisBold, sans-serif;
-  }
-
-  &__number--red {
-    color: $red;
-  }
-
-  &__legend {
-    font-size: 15px;
-    font-family: CompromisBold;
-  }
-
-  p {
-    font-size: 15px;
-
-  }
-}
-
-.map {
-  position: relative;
-  padding: 0;
-
-  &__legend {
-    position: absolute;
-    bottom: $block-padding;
-    left: $block-padding;
-    font-size: 18px;
-    font-family: Compromis;
-    color: #888;
-    line-height: 1;
   }
 }
 
@@ -120,103 +78,6 @@
   }
 }
 
-.chart {
-  margin-top: $block-padding;
-}
-
-.chart {
-
-  &__wrapper {
-    position: relative;
-    height: 500px;
-    width: 150px;
-  }
-
-  &__bar {
-    color: #FFF;
-    font-family: CompromisBold, sans-serif;
-    font-size: 22px;
-    text-align: right;
-
-    span {
-      display: block;
-      padding: 20px;
-    }
-  }
-
-  &__bar--total {
-    background: $brand-primary;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 100%;;
-    position: absolute;
-
-    &:hover {
-      background: lighten($brand-primary, 10%);
-    }
-  }
-
-  &__bar--budgeted {
-    position: absolute;
-    background: #8A919B;
-    height: 80%;
-    border-left: 2px #FFF solid;
-    border-top: 2px #FFF solid;
-    bottom: 0;
-    right: 0;
-    left: 10px;
-
-    &:hover {
-      background: lighten(#8A919B, 10%);
-    }
-  }
-
-  &__bar--executed {
-    position: absolute;
-    background: #646870;
-    height: 40%;
-    left: 20px;
-    border-left: 2px #FFF solid;
-    border-top: 2px #FFF solid;
-    bottom: 0;
-    right: 0;
-
-    &:hover {
-      background: lighten(#646870, 10%);
-    }
-  }
-}
-
-
-.debt {
-  margin-top: $block-padding;
-
-  &__counter {
-    font-family: CompromisBold, sans-serif;
-    font-size: 34px;
-    color: $red;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px $red solid;
-    border-bottom: 2px $red solid;
-    background: lighten($red, 52%);
-    margin-bottom: 10px;
-
-    .glyphicon {
-      font-size: 30px;
-    }
-  }
-
-  h2 {
-    margin-top: 0;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .video {
   margin-top: $block-padding;
   padding: 0;
@@ -244,63 +105,9 @@
     }
 }
 
-.take-action {
-  margin-top: $block-padding;
-
-  h2 {
-    margin-top: 0;
-  }
-
-  ul, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 20px;
-  }
-
-  li:last-child {
-    margin-bottom: 0;
-  }
-
-
-  &__social-button {
-    display: block;
-    background: #CCC;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-family: Compromis, sans-serif;
-    color: #FFF;
-    transform: 0.4s ease-in;
-
-    &:hover {
-      color: #FFF;
-      text-decoration: none;
-    }
-
-    .glyphicon {
-      margin-right: 10px;
-    }
-  }
-
-  &__social-button--facebook {
-    background: #4267B2;
-
-    &:hover {
-      background: lighten(#4267B2, 10%);
-    }
-  }
-
-  &__social-button--twitter {
-    background: #1B95E0;
-
-    &:hover {
-      background: lighten(#1B95E0, 10%);
-    }
-  }
-
-}
+@import 'modules/_amendments';
+@import 'modules/_chart';
+@import 'modules/_debt';
+@import 'modules/_map';
+@import 'modules/_percentages';
+@import 'modules/_take-action';

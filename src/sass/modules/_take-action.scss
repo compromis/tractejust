@@ -1,0 +1,60 @@
+.take-action {
+  margin-top: $block-padding;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+
+  &__button {
+    display: block;
+    background: #CCC;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Compromis, sans-serif;
+    color: #FFF;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      color: #FFF;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+
+    .glyphicon {
+      margin-right: 10px;
+    }
+  }
+
+  &__button--signatures {
+    background: $gray;
+  }
+
+  &__button--facebook {
+    background: #4267B2;
+  }
+
+  &__button--twitter {
+    background: #1B95E0;
+  }
+}

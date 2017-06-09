@@ -1,8 +1,9 @@
 import React from 'react';
+import { translate } from "react-translate";
 
 import format from 'format-number';
 
-class Debt extends React.Component {
+class DebtCounter extends React.Component {
   constructor(props){
     super(props);
 
@@ -35,19 +36,26 @@ class Debt extends React.Component {
     });
   }
 
-  render() {
+  render(){
     var myFormat = format({suffix: '€', integerSeparator: '.', round: 0});
     var formattedNumber = myFormat(this.state.number);
 
+    return <span>{formattedNumber}</span>;
+  }
+}
+
+class Debt extends React.Component {
+
+  render() {
     return (
       <div className="block debt">
-        <h2>Deute històric</h2>
-        <p>Lorem ipsum</p>
-        <div className="debt__counter"><span className="glyphicon glyphicon-arrow-up"></span> {formattedNumber}</div>
-        <p>Lorem ipsum</p>
+        <h2>{this.props.t('HEADER')}</h2>
+        <p><span dangerouslySetInnerHTML={{__html: this.props.t('PARAGRAPH_OVER')}}></span></p>
+        <div className="debt__counter"><span className="glyphicon glyphicon-arrow-up"></span> <DebtCounter /></div>
+        <p><span dangerouslySetInnerHTML={{__html: this.props.t('PARAGRAPH_UNDER')}}></span></p>
       </div>
     );
   }
 }
 
-export default Debt;
+export default translate('Debt')(Debt);

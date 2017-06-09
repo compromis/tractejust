@@ -1,0 +1,31 @@
+.percentages {
+  margin-top: $block-padding;
+  color: $gray;
+
+  .col-xs-4 {
+    text-align: center;
+  }
+
+  svg {
+    max-width: 50px;
+  }
+
+  &__numbers {
+    font-size: 30px;
+    font-family: CompromisBold, sans-serif;
+  }
+
+  &__number--red {
+    color: $red;
+  }
+
+  &__legend {
+    font-size: 15px;
+    font-family: CompromisBold;
+  }
+
+  p {
+    font-size: 15px;
+
+  }
+}
