@@ -3,7 +3,7 @@ import React from 'react';
 import { translate } from "react-translate";
 
 import Header from './components/header';
-import CarouselWidget from './components/carousel';
+import Amendments from './components/amendments';
 import Map from './components/map';
 import MainText from './components/main-text';
 import Percentages from './components/percentages';
