@@ -1,9 +1,9 @@
 import React from 'react';
-import amendments from '../../data/amendments.json';
 import Carousel from '../nuka-carousel/carousel'; // Modified nuka-carousel
 import ReactCSSTransitionReplace from 'react-css-transition-replace';
 import { translate } from "react-translate";
-//import $ from 'jquery';
+
+import amendments from '../../data/amendments.json';
 
 import Amendment from './amendment.js';
 
@@ -24,7 +24,7 @@ class AmendmentImage extends React.Component {
 }
 
 
-class CarouselWidget extends React.Component {
+class Amendments extends React.Component {
   constructor(props) {
     super(props);
 
@@ -91,7 +91,7 @@ class CarouselWidget extends React.Component {
                       easing="easeInOut"
                       edgeEasing="easeOutCirc">
                 { this.state.amendments.map(function(amendment, i){
-                    return <Amendment key={i} id={amendment.id} text={amendment.title} icon={amendment.icon} />;
+                    return <Amendment key={i} id={amendment.id} text={language == 'es' ? amendment.titleES : amendment.title } icon={amendment.icon} />;
                 }.bind(this)) }
             </Carousel>
         </section>
@@ -99,4 +99,4 @@ class CarouselWidget extends React.Component {
   }
 }
 
-export default translate('CarouselWidget')(CarouselWidget);
+export default translate('Amendments')(Amendments);

@@ -1,8 +1,6 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-/*import ReactFBLike from 'react-fb-like';*/
-
 class Header extends React.Component {
 
   render() {
@@ -27,21 +25,26 @@ class Header extends React.Component {
           <div className="collapse navbar-collapse" id="languages-navbar">
             <ul className="nav navbar-nav navbar-right">
               <li>
-                {/*<div className="share-buttons">
-                  <ReactFBLike
-                    language="ca_ES"
-                    appId="252515324782640"
-                    version="v2.8"
-                    href="http://tractejust.org"
-                    layout="button_count"
-                    action="like"
-                    size="small"
-                    showFaces="false"
-                    share="true" />
-
-                    <a href="https://twitter.com/share" className="twitter-share-button" data-text="Test" data-hashtags="TracteJust" data-related="compromis" data-lang="es" data-dnt="true" data-show-count="false">Tweet</a>
-
-                </div>*/}
+                <div className="social-buttons">
+                  <iframe
+                    src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ftractejust.org&width=198&layout=button_count&action=like&size=large&show_faces=false&share=true&height=37&appId=252515324782640&locale=ca_ES"
+                    width={213}
+                    allowTransparency={true}
+                    scrolling="no"
+                    className="social-buttons__facebook"
+                    frameborder={0}
+                    height={37}>
+                  </iframe>
+                  <iframe
+                    src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=http%3A%2F%2Ftractejust.org&via=compromis&related=compromis&text=&lang=es"
+                    className="social-buttons__twitter"
+                    width={140}
+                    height={37}
+                    allowTransparency={true}
+                    scrolling="no"
+                    frameborder={0}>
+                  </iframe>
+                </div>
               </li>
 
               <li className={language != 'es' ? 'active' : ''}><a href="/">Valencià</a></li>

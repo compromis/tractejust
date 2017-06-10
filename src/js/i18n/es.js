@@ -6,7 +6,7 @@ export default {
     TITLE: "Hello world",
     KEY_WITH_PARAMS: "Hello {{name}}",
   },
-  CarouselWidget: {
+  Amendments: {
     HEADER_1: "con un ",
     HASHTAG: "#TratoJusto",
     HEADER_2: ", podríamos",

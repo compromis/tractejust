@@ -19,7 +19,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Header />
-        <CarouselWidget />
+        <Amendments />
 
         <div className="container main-container" id="content">
           <div className="row">
