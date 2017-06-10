@@ -7,10 +7,10 @@ export default {
     KEY_WITH_PARAMS: "Hello {{name}}",
   },
   CarouselWidget: {
-    HEADER_1: "amb un ",
-    HASHTAG: "#TracteJust",
-    HEADER_2: ", podriem",
-    HEADER_3: "desenvolupar projectes com..."
+    HEADER_1: "con un ",
+    HASHTAG: "#TratoJusto",
+    HEADER_2: ", podríamos",
+    HEADER_3: "desarrollar proyectos como..."
   },
   Amendment: {
     AMENDMENT_INFO: "Esmena <u>#{{num}}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>"

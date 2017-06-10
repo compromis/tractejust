@@ -19,12 +19,30 @@ var cssConfig = isProd ? cssProd : cssDev;
 
 var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
 
-var htmlPlugin = new HtmlWebpackPlugin({
+var ValencianHTML = new HtmlWebpackPlugin({
             title: 'Tracte Just',
             description: '',
-            /*minify: {
+            language: 'ca',
+            thumbnail: 'https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg',
+            url: 'http://tractejust.org',
+            minify: {
                  collapseWhitespace: true
-            },*/
+            },
+            hash: true,
+            template: './src/index.html',
+            chunksSortMode: packageSort(['bootstrap', 'app'])
+});
+
+var SpanishHTML = new HtmlWebpackPlugin({
+            filename: 'cas/index.html',
+            title: 'Trato Justo',
+            description: '',
+            language: 'es',
+            thumbnail: 'https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg',
+            url: 'http://tratojusto.org',
+            minify: {
+                 collapseWhitespace: true
+            },
             hash: true,
             template: './src/index.html',
             chunksSortMode: packageSort(['bootstrap', 'app'])
@@ -104,7 +122,8 @@ var config = {
   },
   plugins: [
     extractPlugin,
-    htmlPlugin
+    ValencianHTML,
+    SpanishHTML
   ]
 };
 

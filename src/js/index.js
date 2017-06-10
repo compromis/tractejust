@@ -12,13 +12,13 @@ import spanish from './i18n/es.js';
 
 require.context("../images/amendments", true);
 
-var language = 'ca';
+var translations = language == 'es' ? spanish : catalan;
 
 class App extends React.Component {
 
   render(){
     return(
-      <TranslatorProvider translations={catalan}>
+      <TranslatorProvider translations={translations}>
         <Layout />
       </TranslatorProvider>
     )

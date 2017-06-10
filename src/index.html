@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="<%= htmlWebpackPlugin.options.language %>">
   <head>
 
     <meta charset="UTF-8">
@@ -28,25 +28,29 @@
   	<meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>"/>
   	<meta property="og:locale" content="ca_ES"/>
   	<meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>"/>
-  	<meta property="og:url" content="https://compromis.net"/>
-  	<meta property="og:image" content="https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg"/>
+  	<meta property="og:url" content="<%= htmlWebpackPlugin.options.url %>"/>
+  	<meta property="og:image" content="<%= htmlWebpackPlugin.options.thumbnail %>"/>
   	<meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>"/>
   	<meta property="twitter:card" content="summary"/>
   	<meta property="twitter:title" content="<%= htmlWebpackPlugin.options.title %>"/>
   	<meta property="twitter:description" content="<%= htmlWebpackPlugin.options.description %>"/>
-  	<meta property="twitter:image" content="https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg"/>
-  	<meta property="twitter:url" content="https://compromis.net"/>
+  	<meta property="twitter:image" content="<%= htmlWebpackPlugin.options.thumbnail %>"/>
+  	<meta property="twitter:url" content="<%= htmlWebpackPlugin.options.url %>"/>
 
   </head>
   <body>
 
     <noscript>
-      És necessari habilitat JavaScript per poder accedir a aquesta aplicació.
+      <p>És necessari habilitar JavaScript per poder accedir a aquesta pàgina web.</p>
+      <p><em>Es necesario habilitat Javascript para poder acceder a esta página web.</em></p>
     </noscript>
 
 
     <div id="app"></div>
 
+    <script>
+      var language = '<%= htmlWebpackPlugin.options.language %>';
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

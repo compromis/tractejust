@@ -51,6 +51,25 @@
     }
   }
 
+  .navbar-nav > .active > a {
+    color: #FFF;
+    font-weight: bold;
+    font-family: CompromisBold, sans-serif;
+    background: transparent;
+
+    &:hover {
+      color: #FFF;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:focus {
+      background: #FFF;
+      color: $brand-primary;
+    }
+  }
+
+
   .navbar-toggle {
     border-color: transparent;
     background-color: transparent;
