@@ -12,6 +12,8 @@ import spanish from './i18n/es.js';
 
 require.context("../images/amendments", true);
 
+var language = 'ca';
+
 class App extends React.Component {
 
   render(){

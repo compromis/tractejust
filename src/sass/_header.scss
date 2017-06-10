@@ -41,7 +41,8 @@
 
     &:hover {
       color: #FFF;
-      text-decoration: underline;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
     }
 
     &:focus {
