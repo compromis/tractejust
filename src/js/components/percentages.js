@@ -1,10 +1,10 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-import SVGPeople from 'react-svg-inline-loader!../../images/icon-people.svg';
-import SVGPIB from 'react-svg-inline-loader!../../images/icon-pib.svg';
-import SVGMoney from 'react-svg-inline-loader!../../images/icon-money.svg';
-
+import SVGPeople from 'react-svg-inline-loader!../../svg/icons/icon-people.svg';
+import SVGPIB from 'react-svg-inline-loader!../../svg/icons/icon-pib.svg';
+import SVGMoney from 'react-svg-inline-loader!../../svg/icons/icon-money.svg';
+import ABCLogo from '../../images/sources/abc.png';
 
 class Percentages extends React.Component {
 
@@ -13,7 +13,7 @@ class Percentages extends React.Component {
       <div className="block percentages">
         <a href="http://www.abc.es/local-comunidad-valenciana/20150131/abci-montoro-financiacion-201501311558.html" target="_blank" className="heading heading--abc">
           <span className="heading__source">
-            <img src="/images/map/abc.png" />
+            <img src={ABCLogo} alt="ABC" />
           </span>
           <span className="heading__text">
             Montoro admite que la Comunidad Valenciana es la peor financiada de España

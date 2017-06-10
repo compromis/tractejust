@@ -88,8 +88,6 @@ class CarouselWidget extends React.Component {
                       className="amendments__items"
                       slideIndex={this.state.initialAmendment}
                       afterSlide={(index) => this.updateCurrentAmendment(index)}
-                      autoplay={true}
-                      autoplayInterval={6000}
                       easing="easeInOut"
                       edgeEasing="easeOutCirc">
                 { this.state.amendments.map(function(amendment, i){

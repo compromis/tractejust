@@ -10,6 +10,8 @@ import Layout from './layout';
 import catalan from './i18n/ca.js';
 import spanish from './i18n/es.js';
 
+require.context("../images/amendments", true);
+
 class App extends React.Component {
 
   render(){

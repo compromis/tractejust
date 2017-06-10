@@ -1,7 +1,7 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-import ReactFBLike from 'react-fb-like';
+/*import ReactFBLike from 'react-fb-like';*/
 
 class Header extends React.Component {
 
@@ -27,7 +27,7 @@ class Header extends React.Component {
           <div className="collapse navbar-collapse" id="languages-navbar">
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <div className="share-buttons">
+                {/*<div className="share-buttons">
                   <ReactFBLike
                     language="ca_ES"
                     appId="252515324782640"
@@ -41,7 +41,7 @@ class Header extends React.Component {
 
                     <a href="https://twitter.com/share" className="twitter-share-button" data-text="Test" data-hashtags="TracteJust" data-related="compromis" data-lang="es" data-dnt="true" data-show-count="false">Tweet</a>
 
-                </div>
+                </div>*/}
               </li>
 
               <li><a href="#">Valencià</a></li>

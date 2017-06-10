@@ -1,7 +1,8 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-import SVGMap from 'react-svg-inline-loader!../../images/mapa.svg';
+import SVGMap from 'react-svg-inline-loader!../../svg/map.svg';
+import ElMundoLogo from '../../images/sources/elmundo.png';
 
 class Map extends React.Component {
 
@@ -10,7 +11,7 @@ class Map extends React.Component {
       <div className="map block">
         <a href="http://www.elmundo.es/comunidad-valenciana/2017/04/05/58e3fc04468aeb4b798b45c0.html" target="_blank" className="heading">
           <span className="heading__source">
-            <img src="/images/map/elmundo.png" />
+            <img src={ElMundoLogo} alt="El Mundo" />
           </span>
           <span className="heading__text">
             El Gobierno relega a la Comunidad a la cola de la inversión por habitante</span>

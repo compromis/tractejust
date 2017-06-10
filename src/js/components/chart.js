@@ -1,7 +1,7 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-import SVGChart from 'react-svg-inline-loader!../../images/chart.svg';
+import LevanteLogo from '../../images/sources/levante.png';
 
 class Chart extends React.Component {
 
@@ -10,7 +10,7 @@ class Chart extends React.Component {
       <div className="block chart">
         <a href="http://www.levante-emv.com/comunitat-valenciana/2017/06/04/gobierno-dejo-ejecutar-mitad-inversion/1575964.html" target="_blank" className="heading heading--levante">
           <div className="heading__source">
-            <img src="/images/map/levante.png" alt="Levante EMV" />
+            <img src={LevanteLogo} alt="Levante EMV" />
           </div>
           <div className="heading__text">
             El Gobierno dejó sin ejecutar en 2016 la mitad de la inversión presupuestada

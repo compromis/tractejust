@@ -51,9 +51,17 @@
     line-height: 1;
   }
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
     color: #222;
+
+    .heading__text:after {
+      content: "\e164";
+      font-family: "Glyphicons Halflings";
+      font-size: 14px;
+      color: $gray-light;
+      margin-left: 5px;
+    }
   }
 }
 

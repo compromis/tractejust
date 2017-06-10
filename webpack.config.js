@@ -63,14 +63,35 @@ var config = {
               use: 'url-loader?limit=10000&name=fonts/[name].[ext]'
           },
           {   test: /\.(ttf|eot|svg)$/,
-              exclude: SRC_DIR + '/images',
+              exclude: [SRC_DIR + '/svg', SRC_DIR + '/images'],
               use: 'file-loader?name=fonts/[name].[ext]'
           },
           {
-              test: /\.(jpe?g|png|gif)$/i,
+              test: /\.(jpe?g|png|ico|svg|gif)$/i,
+              include: SRC_DIR + '/images',
               use: [
-                  'file-loader?name=images/[name].[ext]',
-                  'image-webpack-loader?bypassOnDebug'
+                  'file-loader?name=[path][name].[ext]&context=./src',
+                  {
+                    loader: 'image-webpack-loader',
+                    query: {
+                      bypassOnDebug: true,
+                      progressive: true,
+
+                      optipng: {
+                        optimizationLevel: 5
+                      },
+                      pngquant: {
+                        quality: '65-90',
+                        speed: 4
+                      },
+                      mozjpeg: {
+                        quality: 75
+                      },
+                      gifsicle: {
+                        interlaced: false
+                      }
+                    }
+                  }
               ]
           }
       ]

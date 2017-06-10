@@ -43,6 +43,11 @@
       color: #FFF;
       text-decoration: underline;
     }
+
+    &:focus {
+      background: #FFF;
+      color: $brand-primary;
+    }
   }
 
   .navbar-toggle {
