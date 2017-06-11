@@ -4,6 +4,9 @@ import { translate } from "react-translate";
 class Header extends React.Component {
 
   render() {
+
+    const { shareableURL, shareableText } = this.props;
+
     return (
       <nav className="navbar navbar-default navbar-compromis navbar-fixed-top">
         <div className="container-fluid">
@@ -27,28 +30,28 @@ class Header extends React.Component {
               <li>
                 <div className="social-buttons">
                   <iframe
-                    src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ftractejust.org&width=198&layout=button_count&action=like&size=large&show_faces=false&share=true&height=37&appId=252515324782640&locale=ca_ES"
+                    src={'https://www.facebook.com/plugins/like.php?href=' + encodeURI(shareableURL) + '&width=198&layout=button_count&action=like&size=large&show_faces=false&share=true&height=37&appId=252515324782640&locale=ca_ES'}
                     width={213}
                     allowTransparency={true}
                     scrolling="no"
                     className="social-buttons__facebook"
-                    frameborder={0}
+                    frameBorder={0}
                     height={37}>
                   </iframe>
                   <iframe
-                    src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=http%3A%2F%2Ftractejust.org&via=compromis&related=compromis&text=&lang=es"
+                    src={'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis&text=' + encodeURI(shareableText) + '&lang=es'}
                     className="social-buttons__twitter"
                     width={140}
                     height={37}
                     allowTransparency={true}
                     scrolling="no"
-                    frameborder={0}>
+                    frameBorder={0}>
                   </iframe>
                 </div>
               </li>
 
               <li className={language != 'es' ? 'active' : ''}><a href="/">Valencià</a></li>
-              <li className={language == 'es' ? 'active' : ''}><a href="/es">Castellano</a></li>
+              <li className={language == 'es' ? 'active' : ''}><a href="/cas">Castellano</a></li>
             </ul>
           </div>
         </div>

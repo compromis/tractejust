@@ -3,8 +3,8 @@ export default {
   // the right rules for singular and plural
   locale: "es",
   Layout: {
-    TITLE: "Hello world",
-    KEY_WITH_PARAMS: "Hello {{name}}",
+    TWEET: "Tweet",
+    URL: "http://tractejust.org"
   },
   Amendments: {
     HEADER_1: "amb un ",

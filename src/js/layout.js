@@ -18,7 +18,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} />
         <Amendments />
 
         <div className="container main-container" id="content">
@@ -26,7 +26,7 @@ class Layout extends React.Component {
             <div className="col-sm-6">
                 <MainText />
                 <Chart />
-                <TakeAction />
+                <TakeAction shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} />
             </div>
             <div className="col-sm-6">
                 <Map />
