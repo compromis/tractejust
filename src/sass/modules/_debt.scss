@@ -3,7 +3,7 @@
 
   &__counter {
     font-family: CompromisBold, sans-serif;
-    font-size: 34px;
+    font-size: 28px;
     color: $red;
     text-align: center;
     padding: 10px 0;
@@ -14,7 +14,7 @@
     margin-top: 20px;
 
     .glyphicon {
-      font-size: 30px;
+      font-size: 26px;
     }
   }
 
@@ -29,5 +29,13 @@
 
   p:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .debt {
+    &__counter {
+      font-size: 34px;
+    }
   }
 }

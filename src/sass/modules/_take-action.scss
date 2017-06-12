@@ -1,5 +1,6 @@
 .take-action {
   margin-top: $block-padding;
+  margin-bottom: $block-padding;
 
   h2 {
     margin: 0;
@@ -30,7 +31,7 @@
     display: block;
     background: #CCC;
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 50px;
     font-size: 18px;
     font-family: Compromis, sans-serif;

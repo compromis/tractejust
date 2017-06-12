@@ -35,21 +35,46 @@ class Amendments extends React.Component {
     };
   }
 
+  shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
+
+
   componentDidMount(){
-      this.initialAmendment();
+      let shuffledAmendments = this.shuffle(this.state.amendments);
+
+      this.setState({
+        amendments: shuffledAmendments
+      }, this.initialAmendment);
+
   }
 
   initialAmendment(){
       let random = this.getRandomAmendment();
       this.setState({
           initialAmendment: random,
-          currentAmendment: amendments[random]
+          currentAmendment: this.state.amendments[random]
       });
   }
 
   updateCurrentAmendment(index){
     this.setState({
-        currentAmendment: amendments[index]
+        currentAmendment: this.state.amendments[index]
     });
   }
 
