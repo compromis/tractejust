@@ -18,7 +18,7 @@ class TakeAction extends React.Component {
       top = Math.round((winHeight / 2) - (height / 2));
     }
 
-    var target = service == 'facebook' ? 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(shareableURL) : 'https://twitter.com/intent/tweet?text=' + encodeURI(shareableText) + '&url=' + encodeURI(shareableText) + '&hashtags=TracteJust&via=compromis&related=compromis';
+    var target = service == 'facebook' ? 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(shareableURL) : 'https://twitter.com/intent/tweet?text=' + encodeURI(shareableText) + '&url=' + encodeURI(shareableText) + '&via=compromis&related=compromis';
     window.open(target, 'intent', windowOptions + ',width=' + width + ',height=' + height + ',top=' + top + ',left=' + left);
     e.preventDefault();
   }

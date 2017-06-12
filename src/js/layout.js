@@ -16,6 +16,7 @@ import Footer from './components/footer';
 class Layout extends React.Component {
 
   render() {
+  
     return (
       <div>
         <Header shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} />

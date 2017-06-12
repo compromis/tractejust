@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
 
     const { shareableURL, shareableText } = this.props;
-
+console.log(encodeURI(shareableText));
     return (
       <nav className="navbar navbar-default navbar-compromis navbar-fixed-top">
         <div className="container-fluid">
@@ -39,7 +39,7 @@ class Header extends React.Component {
                     height={37}>
                   </iframe>
                   <iframe
-                    src={'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis&text=' + encodeURI(shareableText) + '&lang=es'}
+                    src={'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis&text=' + encodeURI(shareableText) + '%23TracteJust&lang=es'}
                     className="social-buttons__twitter"
                     width={140}
                     height={37}

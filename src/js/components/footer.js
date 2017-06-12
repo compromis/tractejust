@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer container">
         <hr />
-        <h4>Segueix l'activitat de <a href="https://compromis.net" target="_blank"><img src='https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina-bw.png' alt="Compromís" className="footer__logo" /></a></h4>
+        <h4>{this.props.t('FOLLOW_HEADING')} <a href="https://compromis.net" target="_blank"><img src='https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina-bw.png' alt="Compromís" className="footer__logo" /></a></h4>
 
         <div className="footer__social-plugins">
           <div>

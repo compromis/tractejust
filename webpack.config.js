@@ -20,10 +20,11 @@ var cssConfig = isProd ? cssProd : cssDev;
 var bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoints.dev;
 
 var ValencianHTML = new HtmlWebpackPlugin({
-            title: 'Tracte Just',
-            description: '',
+            title: 'Per un #TracteJust - Compromís',
+            description: 'La nostra autonomia està doblement discriminada pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.',
+            keywords: 'tracte just, trato justo, compromís, finançament just, financiación justa, inversiones justas, inversions justes, economia, comunitat valenciana, país valencià, generalitat, infrafinançament, infrafinanciación',
             language: 'ca',
-            thumbnail: 'https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg',
+            thumbnail: 'http://tractejust.org/images/thumbnail.jpg',
             url: 'http://tractejust.org',
             minify: {
                  collapseWhitespace: true
@@ -35,10 +36,11 @@ var ValencianHTML = new HtmlWebpackPlugin({
 
 var SpanishHTML = new HtmlWebpackPlugin({
             filename: 'cas/index.html',
-            title: 'Trato Justo',
-            description: '',
+            title: 'Por un #TratoJusto - Compromís',
+            description: 'La nostra autonomia està doblement discriminada pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.',
+            keywords: 'tracte just, trato justo, compromís, finançament just, financiación justa, inversiones justas, inversions justes, economia, comunitat valenciana, país valencià, generalitat, infrafinançament, infrafinanciación',
             language: 'es',
-            thumbnail: 'https://compromis.net/wp-content/themes/Compromis/images/facebook-image.jpg',
+            thumbnail: 'http://tractejust.org/images/thumbnail.es.jpg',
             url: 'http://tratojusto.org',
             minify: {
                  collapseWhitespace: true

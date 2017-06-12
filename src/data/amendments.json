@@ -1,123 +1,254 @@
 [
   {
+    "id": 7,
+    "title": "Construcció d'una nova comissaria a Vinaròs",
+    "titleES": "Construcción de una nueva comisaria a Vinaròs",
+    "icon": "CASERNA",
+    "background": "COMISSARIA"
+  },
+  {
+    "id": 8,
+    "title": "Construcció d'una nova caserna de la Guardia Civil a Alacant",
+    "titleES": "Construcción de un nuevo cuartel de la Guardia Civil en Alacant",
+    "icon": "CASERNA",
+    "background": "GUARDIA-CIVIL"
+  },
+  {
     "id": 16,
     "title": "Millorar la línia ferroviària Alcoi-Xàtiva",
-    "titleES": "Mejorar la línea de tren Alcoi-Xàtiva",
+    "titleES": "Mejorar la linea ferroviaria Alcoi-Xàtiva",
     "icon": "TREN",
     "background": "TREN"
   },
   {
     "id": 17,
-    "title": "Tren de la Costa. Tram Gandia – Oliva - Dénia",
+    "title": "Tren de la Costa Gandia – Oliva - Dénia",
+    "titleES": "Tren de la Costa Gandía – Oliva - Dénia",
     "icon": "TREN",
     "background": "TREN"
   },
   {
     "id": 18,
-    "title": "Crear una estació intermodal en Vila-real",
+    "title": "Construcció Estació intermodal en Vila-real",
+    "titleES": "Construcción Estación intermodal en Vila-real",
     "icon": "ESTACIO",
     "background": "RODALIES"
   },
   {
     "id": 19,
-    "title": "Crear una estació intermodal al Port de Sagunt",
+    "title": "Estació intermodal al Port de Sagunt",
+    "titleES": "Estación intermodal en el Port de Sagunt",
     "icon": "ESTACIO",
     "background": "RODALIES-2"
   },
   {
     "id": 20,
     "title": "Soterrar les vies fèrries de Sueca",
+    "titleES": "Soterrar las vías férreas de Sueca",
     "icon": "VIES",
     "background": "RODALIES"
   },
   {
     "id": 21,
     "title": "Construir la via de l'AVE al seu pas per la Font de la Figuera",
+    "titleES": "Construir la vía del AVE a su paso por la Font de la Figuera",
     "icon": "VIES",
     "background": "AVE"
   },
   {
     "id": 22,
-    "title": "Invertir 500.000€ per al soterrament de les vies de tren de Vila-real",
+    "title": "500.000€ per al soterrament de les vies de tren de Vila-real",
+    "titleES": "500.000€ para el soterramiento de las vías de tren de Vila-real",
     "icon": "VIES",
     "background": "RODALIES"
   },
   {
     "id": 23,
-    "title": "Crear un pas a nivell a l'Alcúdia de Crespins",
+    "title": "Crear un pas a nivell a L'Alcúdia de Crespins",
+    "titleES": "Crear un paso a nivel en L'Alcúdia de Crespins",
     "icon": "PAS-NIVELL",
     "background": "PAS-NIVELL"
   },
   {
     "id": 24,
     "title": "Ampliar la línia de tren València-Moixent fins a la Font de la Figuera",
+    "titleES": "Ampliar la línea de tren València-Moixent hasta la Font de la Figuera",
     "icon": "TREN",
     "background": "TREN"
   },
   {
     "id": 25,
-    "title": "Inevrtir 4.000.000€ per a millorar l'estació de l'Alcúdia de Crespins",
+    "title": "4.000.000€ per a millorar l'estació de L'Alcúdia de Crespins",
+    "titleES": "4.000.000€ para mejorar la estación de L'Alcúdia de Crespins",
     "icon": "ESTACIO",
     "background": "RODALIES"
   },
   {
     "id": 27,
     "title": "Millorar i electrificar la línia C3 de rodalies entre València i Camporrobles",
+    "titleES": "Mejorar y electrificar la línea C3 de cercanías entre València y Camporrobles",
     "icon": "TREN",
     "background": "RODALIES-2"
   },
   {
     "id": 30,
     "title": "Ampliar el túnel de Serreria de València",
+    "titleES": "Ampliar el túnel de Serrería de València",
     "icon": "TUNEL",
     "background": "TUNEL-SERRERIA"
   },
   {
     "id": 34,
-    "title": "La construcció de la línia de rodalies entre Castelló de la Plana i Vinaròs",
+    "title": "Línia de rodalies entre Castelló de la Plana i Vinaròs",
+    "titleES": "Línea de cercanías entre Castelló de la Plana y Vinaròs",
     "icon": "TREN",
     "background": "RODALIES"
   },
   {
     "id": 35,
-    "title": "Construir el tram del tren de la costa des de Dénia a Alacant",
+    "title": "Tren de la costa des de Dénia a Alacant",
+    "titleES": "Tren de la costa desde Dénia hasta Alacant",
     "icon": "VIES",
     "background": "TREN"
   },
   {
     "id": 41,
     "title": "Connexió ferroviària entre la costa i l'interior de la Vega Baja",
+    "titleES": "Conexión ferroviaria entre la costa y el interior de la Vega Baja",
     "icon": "TREN",
     "background": "TREN"
   },
   {
     "id": 42,
     "title": "Connexió ferroviària de l'aeroport Alacant-Elx",
+    "titleES": "Conexión ferroviaria del aeropuerto Alacant-Elx",
     "icon": "AVIO",
     "background": "AEROPORT-ALACANT"
   },
   {
     "id": 50,
     "title": "Soterrament de les vies de tren al seu pas per Puçol",
+    "titleES": "Soterramiento de les vías de tren a su paso por Puçol",
     "icon": "VIES",
     "background": "TREN"
   },
   {
     "id": 76,
-    "title": "Millora de la seguretat al tram de la N-340 al seu pas per la Ribera de Cabanes",
+    "title": "Millora seguretat del tram de la N-340 al seu pas per la Ribera de Cabanes",
+    "titleES": "Mejora seguridad del tramo de la N-340 a su paso por la Ribera de Cabanes",
+    "icon": "ROAD",
+    "background": "ROAD"
+  },
+  {
+    "id": 79,
+    "title": "Finalitzar el tram de l'A33 al seu pas per la Font de la Figuera",
+    "titleES": "Finalizar el tramo de la A33 a su paso por la Font de la Figuera",
     "icon": "ROAD",
     "background": "ROAD"
   },
   {
     "id": 96,
     "title": "10.000.000€ en inversió per a millorar l'aeroport de València",
+    "titleES": "10.000.000€ en inversión para mejorar el aeropuerto de València",
     "icon": "AVIO",
     "background": "AEROPORT-VALENCIA"
   },
   {
     "id": 98,
     "title": "3.000.000€ per a rehabilitar el nucli urbà de Benicarló",
+    "titleES": "3.000.000€ para rehabilitar el casco urbano de Benicarló",
     "icon": "PATRIMONI",
     "background": "BENICARLO"
+  },
+  {
+    "id": 111,
+    "title": "Ampliació del Conservatori de Castelló",
+    "titleES": "Ampliación del Conservatorio de Castelló",
+    "icon": "MUSIC",
+    "background": "MUSIC"
+  },
+  {
+    "id": 133,
+    "title": "Restauració del castell de Sagunt",
+    "titleES": "Restauración del castillo de Sagunt",
+    "icon": "PATRIMONI",
+    "background": "CASTELL-SAGUNT"
+  },
+  {
+    "id": 169,
+    "title": "Millorar el passeig marítim del Port de Sagunt",
+    "titleES": "Mejorar el paseo marítimo del Port de Sagunt",
+    "icon": "PLATJA",
+    "background": "PASSEIG"
+  },
+  {
+    "id": 172,
+    "title": "3.000.000€ per a lluitar contra el Morrut Roig",
+    "titleES": "3.000.000€ para luchar contra el Picudo Rojo",
+    "icon": "MORRUT",
+    "background": "MORRUT"
+  },
+  {
+    "id": 186,
+    "title": "Passeig marítim a Alcalà de Xivert",
+    "titleES": "Paseo marítimo de Alcalà de Xivert",
+    "icon": "PLATJA",
+    "background": "PASSEIG"
+  },
+  {
+    "id": 188,
+    "title": "Pla contra la Mosca del Mediterrani",
+    "titleES": "Plan contra la Mosca del Mediterráneo",
+    "icon": "MOSCA",
+    "background": "MOSCA"
+  },
+  {
+    "id": 189,
+    "title": "Ajudes a l'agricultura de Moncofa",
+    "titleES": "Ayudas a la agricultura de Moncofa",
+    "icon": "AGRICULTURA",
+    "background": "AGRICULTURA"
+  },
+  {
+    "id": 204,
+    "title": "Recuperació i control de les platges en regressió en l'Horta Sud",
+    "titleES": "Recuperación y control de las playas en regresión en l'Horta Sud",
+    "icon": "COSTA",
+    "background": "PLATJA"
+  },
+  {
+    "id": 205,
+    "title": "Recuperació i control de les platges en regressió en la Ribera Baixa",
+    "titleES": "Recuperación y control de las playas en regresión en la Ribera Baixa",
+    "icon": "COSTA",
+    "background": "PLATJA"
+  },
+  {
+    "id": 206,
+    "title": "1.000.000€ per a la protecció de l'Albufera",
+    "titleES": "1.000.000€ para la protección de l'Albufera",
+    "icon": "AIGUA",
+    "background": "ALBUFERA"
+  },
+  {
+    "id": 209,
+    "title": "Polígon industrial d'Agres",
+    "titleES": "Polígono industrial de Agres",
+    "icon": "INDUSTRIA",
+    "background": "POLIGON"
+  },
+  {
+    "id": 210,
+    "title": "Ampliació del polígon industrial de Vila-real",
+    "titleES": "Ampliación del polígono industrial de Vila-real",
+    "icon": "INDUSTRIA",
+    "background": "POLIGON"
+  },
+  {
+    "id": 211,
+    "title": "15.000.000€ per a la indústria del calçat",
+    "titleES": "15.000.000€ para la industria del calzado",
+    "icon": "SHOES",
+    "background": "SHOES"
   }
 ]
