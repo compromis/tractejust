@@ -50,8 +50,9 @@ class Header extends React.Component {
                 </div>
               </li>
 
-              <li className={language != 'es' ? 'active' : ''}><a href="/">Valencià</a></li>
+              <li className={language == 'ca' ? 'active' : ''}><a href="/">Valencià</a></li>
               <li className={language == 'es' ? 'active' : ''}><a href="/cas">Castellano</a></li>
+              <li className={language == 'en' ? 'active' : ''}><a href="/en">English</a></li>
             </ul>
           </div>
         </div>

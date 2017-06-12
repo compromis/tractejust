@@ -50,6 +50,22 @@ var SpanishHTML = new HtmlWebpackPlugin({
             chunksSortMode: packageSort(['bootstrap', 'app'])
 });
 
+var EnglishHTML = new HtmlWebpackPlugin({
+            filename: 'en/index.html',
+            title: 'For a #FairDeal - Compromís',
+            description: 'La nostra autonomia està doblement discriminada pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.',
+            keywords: 'tracte just, trato justo, compromís, finançament just, financiación justa, inversiones justas, inversions justes, economia, comunitat valenciana, país valencià, generalitat, infrafinançament, infrafinanciación',
+            language: 'en',
+            thumbnail: 'http://tractejust.org/images/thumbnail.es.jpg',
+            url: 'http://tractejust.org/en',
+            minify: {
+                 collapseWhitespace: true
+            },
+            hash: true,
+            template: './src/index.html',
+            chunksSortMode: packageSort(['bootstrap', 'app'])
+});
+
 var extractPlugin = new ExtractTextPlugin({
             filename: 'css/[name].css',
             disable: !isProd,
@@ -125,7 +141,8 @@ var config = {
   plugins: [
     extractPlugin,
     ValencianHTML,
-    SpanishHTML
+    SpanishHTML,
+    EnglishHTML
   ]
 };
 
