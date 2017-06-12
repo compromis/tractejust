@@ -14,7 +14,8 @@ export default {
     HEADER_1: "amb un ",
     HASHTAG: "#TracteJust",
     HEADER_2: ", podriem",
-    HEADER_3: "desenvolupar projectes com..."
+    HEADER_3: "desenvolupar projectes com...",
+    LEARN_MORE: "Vull saber-ne més"
   },
   Amendment: {
     AMENDMENT_INFO: "Esmena <u>#{{num}}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>"
