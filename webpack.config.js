@@ -41,7 +41,7 @@ var SpanishHTML = new HtmlWebpackPlugin({
             keywords: 'tracte just, trato justo, compromís, finançament just, financiación justa, inversiones justas, inversions justes, economia, comunitat valenciana, país valencià, generalitat, infrafinançament, infrafinanciación',
             language: 'es',
             thumbnail: 'http://tractejust.org/images/thumbnail.es.jpg',
-            url: 'http://tratojusto.org',
+            url: 'http://tractejust.org/cas',
             minify: {
                  collapseWhitespace: true
             },

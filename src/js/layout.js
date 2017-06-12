@@ -16,10 +16,10 @@ import Footer from './components/footer';
 class Layout extends React.Component {
 
   render() {
-  
+
     return (
       <div>
-        <Header shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} />
+        <Header shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} shareableHashtag={this.props.t('HASHTAG')} />
         <Amendments />
 
         <div className="container main-container" id="content">
@@ -27,7 +27,7 @@ class Layout extends React.Component {
             <div className="col-sm-6">
                 <MainText />
                 <Chart />
-                <TakeAction shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} />
+                <TakeAction shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} shareableHashtag={this.props.t('HASHTAG')} />
             </div>
             <div className="col-sm-6">
                 <Map />

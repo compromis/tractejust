@@ -13,7 +13,7 @@ class DebtCounter extends React.Component {
   }
 
   componentDidMount(){
-    let interval = setInterval(this.timer.bind(this), 200);
+    let interval = setInterval(this.timer.bind(this), 250);
     let firstDate = new Date(2017, 1, 1);
     let secondDate = new Date();
     let numDays = Math.round((secondDate-firstDate)/(1000*60*60*24));
@@ -32,7 +32,7 @@ class DebtCounter extends React.Component {
   timer(){
 
     this.setState({
-      number: this.state.number + 1.7
+      number: this.state.number + 80
     });
   }
 

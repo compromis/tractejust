@@ -3,8 +3,12 @@ export default {
   // the right rules for singular and plural
   locale: "es",
   Layout: {
-    TWEET: "Tweet",
+    TWEET: "Ja estem farts de pagar i callar! Volem un ",
+    HASHTAG: "TracteJust",
     URL: "http://tractejust.org"
+  },
+  Header: {
+    CAMPAIGN_NAME: '#TracteJust'
   },
   Amendments: {
     HEADER_1: "amb un ",
@@ -17,11 +21,12 @@ export default {
   },
   Debt: {
     HEADER: "Deute històric",
-    PARAGRAPH_OVER: "Cada segon que passa, el deute de l'Estat amb el poble valencià augmenta a causa de l'infrafinançament al qual ens sotmet el govern central any rere any.",
-    PARAGRAPH_UNDER: "El finançament serveix per a poder pagar les competències de l'estat que tenim transferides (Sanitat, Educació, Dependència, etc.). Si sumem tot el que cada any ha deixat d'ingressar-nos l'Estat per fer front al pagament dels nostres serveis bàsics, tenim que ens els últims 10 anys l'estat ens ha deixat de pagar més de 16.000 milions d'euros, és el que és coneix com deute històric o deute acumulat. Un deute que llastra la nostra economia i els serveis que reben els ciutadans i que també reclamem que siga ressarcit."
+    PARAGRAPH_OVER: "Cada segon que passa, el deute de l'Estat amb el poble valencià augmenta a causa de l'<strong>infrafinançament</strong> al qual ens sotmet el govern central any rere any.",
+    PARAGRAPH_UNDER: "El finançament serveix per a poder pagar les competències de l'estat que tenim transferides (Sanitat, Educació, Dependència, etc.). Si sumem tot el que cada any ha deixat d'ingressar-nos l'Estat per fer front al pagament dels nostres serveis bàsics, tenim que <strong>en els últims 10 anys l'estat ens ha deixat de pagar més de 16.000 milions d'euros</strong>, és el que és coneix com deute històric o deute acumulat. Un deute que llastra la nostra economia i els serveis que reben els ciutadans i que també reclamem que siga ressarcit."
   },
   MainText: {
-    MAIN_TEXT: "<p>La nostra autonomia està <strong>doblement discriminada</strong> pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.</p> <p>Som els únics que tenint una renda per càpita inferior a la mitjana estatal, aportem a les arques de l'Estat com si estiguerem per damunt, és a dir, que sent pobres paguem com a rics.</p> <p>D’esta manera, l’Estat ens condemna a unes <strong>contribucions fiscals injustes</strong> i desproporcionades que ens aboquen a la inviabilitat econòmica.</p> <p>A tot açò, se suma el dèficit en <strong>inversions</strong> al nostre territori què anualment ens imposen els distints governs centrals a través dels Pressupostos Generals de l’Estat. Així, sent la nostra autonomia un 11% de la població de l’estat espanyol,  mai rebem un percentatge d’inversions concorde al nombre d’habitants.</p> <p>Des de Compromís exigim al govern central un canvi immediat de finançament autonòmic que solucione la <strong>dramàtica insuficiència financera</strong> de la nostra autonomia, així com unes inversions territorialitzades en infraestructures d’acord al pes poblacional del territori valencià i compensacions per la insuficiència de finançament i d’inversions dels últims anys. No volem més però tampoc menys que els altres. Exigim un <strong>Tracte Just</strong>.</p>"
+    MAIN_TEXT: "<p>La nostra autonomia està <strong>doblement discriminada</strong> pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.</p> <p>Som els únics que tenint una renda per càpita inferior a la mitjana estatal, aportem a les arques de l'Estat com si estiguerem per damunt, és a dir, que sent pobres paguem com a rics.</p> <p>D’esta manera, l’Estat ens condemna a unes <strong>contribucions fiscals injustes</strong> i desproporcionades que ens aboquen a la inviabilitat econòmica.</p> <p>A tot açò, se suma el dèficit en <strong>inversions</strong> al nostre territori què anualment ens imposen els distints governs centrals a través dels Pressupostos Generals de l’Estat. Així, sent la nostra autonomia un 11% de la població de l’estat espanyol,  mai rebem un percentatge d’inversions concorde al nombre d’habitants.</p> <p>Des de Compromís exigim al govern central un canvi immediat de finançament autonòmic que solucione la <strong>dramàtica insuficiència financera</strong> de la nostra autonomia, així com unes inversions territorialitzades en infraestructures d’acord al pes poblacional del territori valencià i compensacions per la insuficiència de finançament i d’inversions dels últims anys. No volem més però tampoc menys que els altres. Exigim un <strong>Tracte Just</strong>.</p>",
+    SLOGAN: "Per un Tracte Just"
   },
   Map: {
     LEGEND: "Inversió per habitant"
@@ -37,8 +42,8 @@ export default {
     TEXT_SHARE: "Si a tu també t'indigna, comparteix-ho amb les teues amistats i fes correr la veu.",
     TEXT_SIGNATURES: "A més, et convidem a arreplegar signatures per a demanar que es reforme el sistema de finançament i l'execuió per part de l'Estat d'unes inversions equiparables al nostre pes poblacional.",
     SIGNATURES: "Arreplega signatures",
-    FACEBOOK: "Comparteix en Facebook",
-    TWITTER: "Fes un tweet"
+    FACEBOOK: "Comparteix-ho en Facebook",
+    TWITTER: "Fes un tweet amb #TracteJust"
   },
   Chart: {
     TOTAL: "Total",

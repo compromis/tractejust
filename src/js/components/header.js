@@ -5,8 +5,8 @@ class Header extends React.Component {
 
   render() {
 
-    const { shareableURL, shareableText } = this.props;
-console.log(encodeURI(shareableText));
+    const { shareableURL, shareableText, shareableHashtag } = this.props;
+
     return (
       <nav className="navbar navbar-default navbar-compromis navbar-fixed-top">
         <div className="container-fluid">
@@ -17,11 +17,11 @@ console.log(encodeURI(shareableText));
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="https://compromis.net">
               <img src="https://compromis.net/wp-content/themes/Compromis/images/logo-compromis-retina.png" alt="Compromís" />
             </a>
             <div className="navbar-text navbar-campaign-name">
-              <a href="/">#TracteJust</a>
+              <a href="/">{this.props.t('CAMPAIGN_NAME')}</a>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ console.log(encodeURI(shareableText));
                     height={37}>
                   </iframe>
                   <iframe
-                    src={'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis&text=' + encodeURI(shareableText) + '%23TracteJust&lang=es'}
+                    src={'https://platform.twitter.com/widgets/tweet_button.html?size=l&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis&text=' + encodeURI(shareableText) + '%23' + shareableHashtag + '&lang=es'}
                     className="social-buttons__twitter"
                     width={140}
                     height={37}

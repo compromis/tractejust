@@ -4,7 +4,7 @@ import { translate } from "react-translate";
 class TakeAction extends React.Component {
 
   handleClick(service, e){
-    const { shareableText, shareableURL } = this.props;
+    const { shareableText, shareableURL, shareableHashtag } = this.props;
     const windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes';
     const width = 550;
     const height = 420;
@@ -18,7 +18,7 @@ class TakeAction extends React.Component {
       top = Math.round((winHeight / 2) - (height / 2));
     }
 
-    var target = service == 'facebook' ? 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(shareableURL) : 'https://twitter.com/intent/tweet?text=' + encodeURI(shareableText) + '&url=' + encodeURI(shareableText) + '&via=compromis&related=compromis';
+    var target = service == 'facebook' ? 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(shareableURL) : 'https://twitter.com/intent/tweet?text=' + encodeURI(shareableText) + '%23' + shareableHashtag + '&url=' + encodeURI(shareableURL) + '&via=compromis&related=compromis';
     window.open(target, 'intent', windowOptions + ',width=' + width + ',height=' + height + ',top=' + top + ',left=' + left);
     e.preventDefault();
   }

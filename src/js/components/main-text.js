@@ -1,7 +1,10 @@
 import React from 'react';
 import { translate } from "react-translate";
 
-import TracteJustLogo from '../../images/tracte-just.svg';
+import TracteJustLogoCA from '../../images/tracte-just.svg';
+import TracteJustLogoES from '../../images/trato-justo.svg';
+
+var logo = language == 'es' ? TracteJustLogoES : TracteJustLogoCA;
 
 class MainText extends React.Component {
 
@@ -9,7 +12,7 @@ class MainText extends React.Component {
     return (
       <div className="block main-text">
 
-        <h2><img src={TracteJustLogo} alt="Per un Tracte Just" /></h2>
+        <h2><img src={logo} alt={this.props.t('SLOGAN')} /></h2>
 
         <span dangerouslySetInnerHTML={{__html: this.props.t('MAIN_TEXT')}}></span>
       </div>
