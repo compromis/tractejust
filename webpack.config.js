@@ -86,6 +86,10 @@ var config = {
               exclude: [SRC_DIR + '/svg', SRC_DIR + '/images'],
               use: 'file-loader?name=fonts/[name].[ext]'
           },
+          {   test: /\.(pdf)$/,
+              include: SRC_DIR + '/docs',
+              use: 'file-loader?name=docs/[name].[ext]'
+          },
           {
               test: /\.(jpe?g|png|ico|svg|gif)$/i,
               include: SRC_DIR + '/images',
