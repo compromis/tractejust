@@ -4,7 +4,8 @@ export default {
   locale: "es",
   Layout: {
     TWEET: "¡Estamos hartos de pagar y callar! Queremos un ",
-    URL: "http://tratojusto.org"
+    URL: "http://tratojusto.org",
+    HASHTAG: "#TratoJusto"
   },
   Header: {
     CAMPAIGN_NAME: '#TratoJusto'
