@@ -29,7 +29,7 @@ export default {
   Map: {
     LEGEND: "Inversión por habitante"
   },
-  Porcentages: {
+  Percentages: {
     POPULATION: "POBLACIÓN“",
     GDP: "PIB",
     ACTUAL: "INVERSIÓN“ REAL",
