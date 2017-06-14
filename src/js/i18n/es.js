@@ -3,58 +3,53 @@ export default {
   // the right rules for singular and plural
   locale: "es",
   Layout: {
-    TWEET: "Ja estem farts de pagar i callar! Volem un ",
-    HASHTAG: "TracteJust",
-    URL: "http://tractejust.org"
-  },
-  Header: {
-    CAMPAIGN_NAME: '#TracteJust'
+    TWEET: "¡Estamos hartos de pagar y callar! Queremos un ",
+    URL: "http://tratojusto.org"
   },
   Amendments: {
-    HEADER_1: "amb un ",
-    HASHTAG: "#TracteJust",
-    HEADER_2: ", podriem",
-    HEADER_3: "desenvolupar projectes com..."
+    HEADER_1: "con un ",
+    HASHTAG: "#TratoJusto",
+    HEADER_2: ", podríamos",
+    HEADER_3: "desarrollar proyectos como..."
   },
   Amendment: {
-    AMENDMENT_INFO: "Esmena <u>#{{num}}</u> presentada al <strong>Congrés dels Diputats</strong> per <strong>Compromís</strong> i rebutjada amb els vots de <strong>PP</strong> i <strong>Ciudadanos</strong>"
+    AMENDMENT_INFO: "Enmienda <u>#{{num}}</u> presentada en el <strong>Congreso de los Diputados</strong> por <strong>Compromís</strong> y rechazada con los votos de <strong>PP</strong> y <strong>Ciudadanos</strong>"
   },
   Debt: {
-    HEADER: "Deute històric",
-    PARAGRAPH_OVER: "Cada segon que passa, el deute de l'Estat amb el poble valencià augmenta a causa de l'<strong>infrafinançament</strong> al qual ens sotmet el govern central any rere any.",
-    PARAGRAPH_UNDER: "El finançament serveix per a poder pagar les competències de l'estat que tenim transferides (Sanitat, Educació, Dependència, etc.). Si sumem tot el que cada any ha deixat d'ingressar-nos l'Estat per fer front al pagament dels nostres serveis bàsics, tenim que <strong>en els últims 10 anys l'estat ens ha deixat de pagar més de 16.000 milions d'euros</strong>, és el que és coneix com deute històric o deute acumulat. Un deute que llastra la nostra economia i els serveis que reben els ciutadans i que també reclamem que siga ressarcit."
+    HEADER: "Deuda histórica",
+    PARAGRAPH_OVER: "Cada segundo que pasa, la deuda del Estado con el pueblo valenciano aumenta a causa de la infrafinanciación a la que nos somete el gobierno central año tras año.",
+    PARAGRAPH_UNDER: "La financiación sirve para poder pagar las competencias del Estado que tenemos transferidas (Sanidad, Educación, Dependencia, etc.). Si sumamos todo el dinero que cada año ha dejado de ingresarnos el Estado para hacer frente al pago de nuestros servicios básicos, tenemos que en los últimos 10 años, el Estado nos ha dejado de pagar más de 16.000 millones de euros, es lo que se conoce como deuda histórica o deuda acumulada. Una deuda que lastra nuestra economía y los servicios que recibe la ciudadanía i que también reclamamos que sea resarcido."
   },
   MainText: {
-    MAIN_TEXT: "<p>La nostra autonomia està <strong>doblement discriminada</strong> pel govern central. Per una banda, per ser la pitjor finançada, i per altra, per ser el territori que menys inversions rep de tot l’Estat.</p> <p>Som els únics que tenint una renda per càpita inferior a la mitjana estatal, aportem a les arques de l'Estat com si estiguerem per damunt, és a dir, que sent pobres paguem com a rics.</p> <p>D’esta manera, l’Estat ens condemna a unes <strong>contribucions fiscals injustes</strong> i desproporcionades que ens aboquen a la inviabilitat econòmica.</p> <p>A tot açò, se suma el dèficit en <strong>inversions</strong> al nostre territori què anualment ens imposen els distints governs centrals a través dels Pressupostos Generals de l’Estat. Així, sent la nostra autonomia un 11% de la població de l’estat espanyol,  mai rebem un percentatge d’inversions concorde al nombre d’habitants.</p> <p>Des de Compromís exigim al govern central un canvi immediat de finançament autonòmic que solucione la <strong>dramàtica insuficiència financera</strong> de la nostra autonomia, així com unes inversions territorialitzades en infraestructures d’acord al pes poblacional del territori valencià i compensacions per la insuficiència de finançament i d’inversions dels últims anys. No volem més però tampoc menys que els altres. Exigim un <strong>Tracte Just</strong>.</p>",
-    SLOGAN: "Per un Tracte Just"
+    MAIN_TEXT: "<p>Nuestra autonomía está <strong>doblemente discriminada</strong> por el gobierno central. Por un lado, por ser la peor financiada, y por otro, por ser el territorio que menos inversiones recibe de todo el Estado.</p> <p>Somos los únicos que teniendo una renta per cápita inferior a la media estatal, aportamos a les arcas del Estado como si estuviéramos por encima, es decir, que siendo pobres pagamos como ricos.</p> <p>De esta manera, el Estado no condena  a unas <strong>contribuciones fiscales injustas</strong> y desproporcionadas que nos abocan a la inviabilidad económica.</p> <p>A todo esto, se suma el déficit en <strong>inversiones</strong> en nuestro territorio que anualmente nos imponen los distintos gobierno centrales a través de los Presupuestos Generales del Estado. Así, siendo un 11% de la población del estado español,  nunca recibimos un porcentaje de inversiones concorde al número de habitantes.</p> <p>Desde Compromís exigimos al gobierno central un cambio inmediato de financiación autonómica que solucione la <strong>dramática insuficiencia financiera</strong> de nuestra autonomía, así como unas inversiones territorializadas en infraestructuras de acuerdo al peso poblacional del territorio valenciano, i compensaciones por la insuficiencia de financiación e inversiones de los últimos años. No queremos más, pero tampoco menos que los demás. Exigimos un <strong>Trato Justo</strong>.</p>"
   },
   Map: {
-    LEGEND: "Inversió per habitant"
+    LEGEND: "Inversión por habitante"
   },
-  Percentages: {
-    POPULATION: "POBLACIÓ",
+  Porcentages: {
+    POPULATION: "POBLACIÓN“",
     GDP: "PIB",
-    ACTUAL: "INVERSIÓ REAL",
-    TEXT: "Al territori valencià som l'<strong>11% de tota la població</strong> de l'Estat i representem el <strong>10% del PIB</strong>. Però, només rebem un <strong>6,5% del total de les inversions</strong> territorialitzades pressupostades, i d'estes inversions, el govern central només va executar la mitat en 2016, és a dir, que en aquell any, únicament vàrem rebre un <strong>3,5% de totes les inversions</strong> de l'Estat."
+    ACTUAL: "INVERSIÓN“ REAL",
+    TEXT: "En el territorio valenciano somos el<strong>11% de toda la población</strong> del Estado y representamos el <strong>10% del PIB</strong>. Pero, solo recibimos un <strong>6,5% del total de las inversiones</strong> territorializadas presupuestadas, y de estas inversiones, el gobierno central nada más ejecutó la mitad en 2016, es decir, que en ese año, únicamente recibimos un <strong>3,5% de todas las inversiones</strong> del Estado."
   },
   TakeAction: {
-    HEADER: "Fes difussió",
-    TEXT_SHARE: "Si a tu també t'indigna, comparteix-ho amb les teues amistats i fes correr la veu.",
-    TEXT_SIGNATURES: "A més, et convidem a arreplegar signatures per a demanar que es reforme el sistema de finançament i l'execuió per part de l'Estat d'unes inversions equiparables al nostre pes poblacional.",
-    SIGNATURES: "Arreplega signatures",
-    FACEBOOK: "Comparteix-ho en Facebook",
-    TWITTER: "Fes un tweet amb #TracteJust"
+    HEADER: "Haz difusión",
+    TEXT_SHARE: "Si a ti también, compártelo con tus amistades y haz correr la voz.",
+    TEXT_SIGNATURES: "Además, te invitamos a recoger firmas para pedir que se reforme el sistema de financiación y la ejecución por parte del Estado de unas inversiones equiparables a nuestro peso poblacional.",
+    SIGNATURES: "Recoge firmas",
+    FACEBOOK: "Comparte en Facebook",
+    TWITTER: "Haz un tweet"
   },
   Chart: {
     TOTAL: "Total",
-    TOTAL_TEXT: "Diners en inversions als quals tenim dret per nombre d'habitants",
-    BUDGETED: "Pressupostat",
-    BUDGETED_TEXT: "Diners que el govern central va dir que invertiria al territori valencià",
-    EXECUTED: "Realitzat",
-    EXECUTED_TEXT: "Si ja ens pressupostàvem poc, aquesta és la xifra real d'inversions executades pel govern central a l'any 2016"
+    TOTAL_TEXT: "Dinero en inversiones al que tenemos derecho por número de habitantes",
+    BUDGETED: "Presupuestado",
+    BUDGETED_TEXT: "Dinero que el gobierno central dijo que invertiría en el territorio valenciano",
+    EXECUTED: "Realizado",
+    EXECUTED_TEXT: "Si ya nos presupuestaban poco, esta es la cifra real de inversiones ejecutadas por el gobierno central en el año 2016"
   },
   Footer: {
-    FOLLOW_HEADING: "Segueix l'activitat de"
+    FOLLOW_HEADING: "Sigue la actividad de"
   }
 
 }

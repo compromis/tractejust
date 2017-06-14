@@ -119,6 +119,10 @@ class Amendments extends React.Component {
                     return <Amendment key={i} id={amendment.id} text={language == 'es' ? amendment.titleES : amendment.title } icon={amendment.icon} />;
                 }.bind(this)) }
             </Carousel>
+
+            {/*<div className="amendments__learn-more">
+              <a href="#" onClick={(e) => this.scrollDown(e)}>{this.props.t('LEARN_MORE')}</a>
+            </div>*/ }
         </section>
     );
   }

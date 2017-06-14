@@ -72,6 +72,27 @@
       }
     }
 
+    &__learn-more {
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 200;
+      font-size: 16px;
+      opacity: 0;
+      @include animations(FadeIn, 1s, 2.6s, forwards);
+
+      a {
+        color: #FFF;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
     &__overlay {
       background: #000;
       opacity: 0.7;
@@ -218,6 +239,11 @@
       }
     }
 
+    &__learn-more {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
     &__item {
       height: 800px;
 
@@ -264,6 +290,11 @@
       .btn{
         font-size: 16px;
       }
+    }
+
+    &__learn-more {
+      margin-bottom: 20px;
+      font-size: 16px;
     }
 
     &__item {

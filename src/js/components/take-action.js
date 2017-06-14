@@ -1,5 +1,6 @@
 import React from 'react';
 import { translate } from "react-translate";
+import fullaSignatures from "../../docs/fulla-signatures.pdf";
 
 class TakeAction extends React.Component {
 
@@ -51,7 +52,7 @@ class TakeAction extends React.Component {
         <p>{this.props.t('TEXT_SIGNATURES')}</p>
         <ul className="take-action__social-buttons">
           <li>
-            <a href="" className="take-action__button take-action__button--signatures">
+            <a href={fullaSignatures} target="_blank" className="take-action__button take-action__button--signatures">
               <span className="glyphicon glyphicon-pencil"></span>
               <span>{this.props.t('SIGNATURES')}</span>
             </a>
