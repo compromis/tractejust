@@ -30,9 +30,9 @@ export default {
     LEGEND: "Inversión por habitante"
   },
   Percentages: {
-    POPULATION: "POBLACIÓN“",
+    POPULATION: "POBLACIÓN",
     GDP: "PIB",
-    ACTUAL: "INVERSIÓN“ REAL",
+    ACTUAL: "INVERSIÓN REAL",
     TEXT: "En el territorio valenciano somos el<strong>11% de toda la población</strong> del Estado y representamos el <strong>10% del PIB</strong>. Pero, solo recibimos un <strong>6,5% del total de las inversiones</strong> territorializadas presupuestadas, y de estas inversiones, el gobierno central nada más ejecutó la mitad en 2016, es decir, que en ese año, únicamente recibimos un <strong>3,5% de todas las inversiones</strong> del Estado."
   },
   TakeAction: {
