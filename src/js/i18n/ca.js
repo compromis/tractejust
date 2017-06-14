@@ -44,7 +44,8 @@ export default {
     TEXT_SIGNATURES: "A més, et convidem a arreplegar signatures per a demanar que es reforme el sistema de finançament i l'execuió per part de l'Estat d'unes inversions equiparables al nostre pes poblacional.",
     SIGNATURES: "Arreplega signatures",
     FACEBOOK: "Comparteix-ho en Facebook",
-    TWITTER: "Fes un tweet amb #TracteJust"
+    TWITTER: "Fes un tweet amb #TracteJust",
+    PROFILE_PIC: "#TracteJust en tu perfil"
   },
   Chart: {
     TOTAL: "Total",

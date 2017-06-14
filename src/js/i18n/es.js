@@ -6,6 +6,9 @@ export default {
     TWEET: "¡Estamos hartos de pagar y callar! Queremos un ",
     URL: "http://tratojusto.org"
   },
+  Header: {
+    CAMPAIGN_NAME: '#TratoJusto'
+  },
   Amendments: {
     HEADER_1: "con un ",
     HASHTAG: "#TratoJusto",
@@ -37,8 +40,9 @@ export default {
     TEXT_SHARE: "Si a ti también, compártelo con tus amistades y haz correr la voz.",
     TEXT_SIGNATURES: "Además, te invitamos a recoger firmas para pedir que se reforme el sistema de financiación y la ejecución por parte del Estado de unas inversiones equiparables a nuestro peso poblacional.",
     SIGNATURES: "Recoge firmas",
-    FACEBOOK: "Comparte en Facebook",
-    TWITTER: "Haz un tweet"
+    FACEBOOK: "Compartir en Facebook",
+    TWITTER: "Haz un tweet #TratoJusto",
+    PROFILE_PIC: "#TracteJust al teu perfil"
   },
   Chart: {
     TOTAL: "Total",

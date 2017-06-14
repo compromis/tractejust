@@ -47,6 +47,12 @@ class TakeAction extends React.Component {
               <span>{this.props.t('TWITTER')}</span>
             </a>
           </li>
+          <li>
+            <a href="https://twibbon.com/Support/tracte-just" target="_blank" className="take-action__button take-action__button--profile">
+              <span className="glyphicon glyphicon-user"></span>
+              <span>{this.props.t('PROFILE_PIC')}</span>
+            </a>
+          </li>
         </ul>
 
         <p>{this.props.t('TEXT_SIGNATURES')}</p>
