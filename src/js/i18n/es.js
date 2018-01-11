@@ -31,7 +31,7 @@ export default {
     LEGEND: "Inversión por habitante"
   },
   Motions: {
-    LEGEND: "Ayuntamientos donde se han presentado mociones por una #FinanciaciónJusta"
+    LEGEND: "Ayuntamientos en los que se han presentado mociones por una #FinanciaciónJusta"
   },
   Percentages: {
     POPULATION: "POBLACIÓN",
