@@ -1,0 +1,18 @@
+.motions {
+  margin-top: $block-padding;
+
+  &__map {
+    margin: -$block-padding;
+    margin-bottom: $block-padding;
+
+    iframe {
+      border: none;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+}

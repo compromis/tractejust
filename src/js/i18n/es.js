@@ -30,6 +30,9 @@ export default {
   Map: {
     LEGEND: "Inversión por habitante"
   },
+  Motions: {
+    LEGEND: "Ayuntamientos donde se han presentado mociones por una #FinanciaciónJusta"
+  },
   Percentages: {
     POPULATION: "POBLACIÓN",
     GDP: "PIB",

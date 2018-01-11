@@ -4,6 +4,7 @@ import { translate } from "react-translate";
 
 import Header from './components/header';
 import Amendments from './components/amendments';
+import Motions from './components/motions';
 import Map from './components/map';
 import MainText from './components/main-text';
 import Percentages from './components/percentages';
@@ -27,6 +28,7 @@ class Layout extends React.Component {
             <div className="col-sm-6">
                 <MainText />
                 <Chart />
+                <Motions />
                 <TakeAction shareableURL={this.props.t('URL')} shareableText={this.props.t('TWEET')} shareableHashtag={this.props.t('HASHTAG')} />
             </div>
             <div className="col-sm-6">
